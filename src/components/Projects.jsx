@@ -1,11 +1,17 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { github, pineapple, pineappleHover } from "../assets";
+import { github, plus } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
+
+import '../index.css';
 
 const ProjectCard = ({
   id,
@@ -35,7 +41,7 @@ const ProjectCard = ({
       <img
         src={image}
         alt={name}
-        className="absolute w-full h-full object-cover rounded-[24px]"
+        className="absolute w-full h-full object-cover rounded-[24px] dark-image"
       />
 
       {active !== id ? (
@@ -44,7 +50,7 @@ const ProjectCard = ({
             className="font-extrabold font-beckman uppercase w-[200px] h-[30px] 
         whitespace-nowrap sm:text-[27px] text-[18px] text-timberWolf tracking-[1px]
         absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
-        leading-none z-20"
+        leading-none"
           >
             {name}
           </h3>
@@ -63,15 +69,15 @@ const ProjectCard = ({
                   sm:opacity-[0.9] opacity-[0.8]"
               >
                 <img
-                  src={github}
-                  alt="source code"
-                  className="w-4/5 h-4/5 object-contain"
+                  src={plus}
+                  alt="Voir plus"
+                  className="w-3/5 h-3/5 object-contain"
                 />
               </div>
             </div>
 
             <h2
-              className="font-bold sm:text-[32px] text-[24px] 
+              className="font-bold sm:text-[26px] text-[20px] 
               text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]"
             >
               {name}
@@ -83,35 +89,6 @@ const ProjectCard = ({
             >
               {description}
             </p>
-            <button
-              className="live-demo flex justify-between 
-              sm:text-[16px] text-[14px] text-timberWolf 
-              font-bold font-beckman items-center py-5 pl-2 pr-3 
-              whitespace-nowrap gap-1 sm:w-[138px] sm:h-[50px] 
-              w-[125px] h-[46px] rounded-[10px] glassmorphism 
-              sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-eerieBlack transition duration-[0.2s] 
-              ease-in-out"
-              onClick={() => window.open(demo, "_blank")}
-              onMouseOver={() => {
-                document
-                  .querySelector(".btn-icon")
-                  .setAttribute("src", pineappleHover);
-              }}
-              onMouseOut={() => {
-                document
-                  .querySelector(".btn-icon")
-                  .setAttribute("src", pineapple);
-              }}
-            >
-              <img
-                src={pineapple}
-                alt="pineapple"
-                className="btn-icon sm:w-[34px] sm:h-[34px] 
-                  w-[30px] h-[30px] object-contain"
-              />
-              LIVE DEMO
-            </button>
           </div>
         </>
       )}

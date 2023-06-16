@@ -1,12 +1,11 @@
-import bwmap from './backgrounds/bw-map.jpeg';
-import nairobi from './backgrounds/nairobi.png';
-import whiteabstract from './backgrounds/white-abstract.png';
-import worldmap from './backgrounds/world-map.png';
 import galaxy from './backgrounds/space.jpg';
+import night from './backgrounds/night.jpg';
 
 import logo from './logo/Logo_Business.png';
+import logoTransparent from './logo/logo_transparent.png';
 
 import tristan from './personal/tristan.png';
+import astronaut from './personal/astronaut.png';
 
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
@@ -20,13 +19,14 @@ import creation from './icons/arts.png';
 
 import github from './icons/github.png';
 import close from './icons/close.png';
-import download from './icons/download.png';
+import download from './icons/pdf.png';
 import pineapple from './icons/pineapple.png';
 import pineappleHover from './icons/pineappleHover.png';
 import menu from './icons/menu.png';
 import resume from './icons/resume.png';
 import send from './icons/send.png';
 import sendHover from './icons/send.png';
+import plus from './icons/plus.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
@@ -36,32 +36,34 @@ import html from './tech/html.png';
 import javascript from './tech/javascript.png';
 import nodejs from './tech/nodejs.png';
 import reactjs from './tech/reactjs.png';
-import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
-import typescript from './tech/typescript.png';
 import graphql from './tech/graphql.png';
-import postgresql from './tech/postgresql.png';
-import rubyrails from './tech/rubyrails.png';
+import sass from './tech/sass.png';
+import angular from './tech/angular.png';
+import bootstrap from './tech/bootstrap.png';
+import flutter from './tech/flutter.png';
+import mysql from './tech/mysql.png';
+import php from './tech/php.png'
+import python from './tech/python.png'
+import symfony from './tech/symfony.png'
 
 import pasquier from './company/pasquier.png';
 import espl from './company/ESPL.png';
 import eram from './company/eram.png';
 
-import komikult from './projects/komikult.png';
-import leaderboard from './projects/leaderboard.png';
-import math from './projects/math-magicians.png';
-import movie from './projects/movie-metro.png';
-import nyeusi from './projects/nyeusi.png';
-import space from './projects/space-hub.png';
+import mobile from './projects/application_mobile.png';
+import graphisme from './projects/graphisme.png';
+import photo from './projects/montage_photo.jpg';
+import video from './projects/montage_video.png';
+import web from './projects/site_web.png';
 
 export {
-  bwmap,
+  night,
   galaxy,
-  nairobi,
-  whiteabstract,
-  worldmap,
   logo,
+  logoTransparent,
   tristan,
+  astronaut,
   backend,
   ux,
   frontend,
@@ -79,6 +81,7 @@ export {
   resume,
   send,
   sendHover,
+  plus,
   css,
   docker,
   figma,
@@ -87,18 +90,21 @@ export {
   html,
   javascript,
   nodejs,
-  postgresql,
-  rubyrails,
   reactjs,
-  redux,
   tailwind,
-  typescript,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
+  sass,
+  angular,
+  bootstrap,
+  flutter,
+  mysql,
+  php,
+  python,
+  symfony,
+  mobile,
+  graphisme,
+  photo,
+  video,
+  web,
   pasquier,
   espl,
   eram

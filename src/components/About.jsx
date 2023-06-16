@@ -11,6 +11,7 @@ import { services } from "../constants";
 import { hobbies } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { astronaut } from "../assets";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
@@ -89,29 +90,40 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Qui je suis ?</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-jet text-[18px] max-w-3xl leading-[30px]"
-      >
-        Je suis développeur web basé dans la ville de Cholet, terre de basket.
-        <br></br>
-        <br></br>
-        J'ai une passion pour la création graphique et l'informatique.<br></br>
-        <br></br>
-        De nature curieux et dynamique, j’aime créer et m’améliorer chaque jour
-        en développant de nouvelles compétences dans le web mais également dans
-        le graphisme.<br></br>
-        <br></br>
-        Lorsque je travaille sur un projet qui me passionne, je ne compte pas
-        mes heures et je donne tout pour y arriver. <br></br>
-        <br></br>
-        Malgré mon défaut d’être « discret », cela me permet d’observer le monde
-        qui nous entoure et de me concentrer sur des éléments qui m’entourent me
-        permettant d’engranger de nouvelles idées pour mes futures créations.
-        <br></br>
-        <br></br>
-        <SocialLinks />
-      </motion.p>
+      <div className="containerAbout">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="textAbout mt-4 text-jet text-[18px] max-w-3xl leading-[30px]"
+        >
+          Je suis développeur web basé dans la ville de Cholet, terre de basket.
+          <br></br>
+          <br></br>
+          J'ai une passion pour la création graphique et l'informatique.
+          <br></br>
+          <br></br>
+          De nature curieux et dynamique, j’aime créer et m’améliorer chaque
+          jour en développant de nouvelles compétences dans le web mais
+          également dans le graphisme.<br></br>
+          <br></br>
+          Lorsque je travaille sur un projet qui me passionne, je ne compte pas
+          mes heures et je donne tout pour y arriver. <br></br>
+          <br></br>
+          Malgré mon défaut d’être « discret », cela me permet d’observer le
+          monde qui nous entoure et de me concentrer sur des éléments qui
+          m’entourent me permettant d’engranger de nouvelles idées pour mes
+          futures créations.
+          <br></br>
+          <br></br>
+          <SocialLinks />
+        </motion.p>
+
+        <motion.img
+          variants={fadeIn("", "", 0.1, 1)}
+          src={astronaut}
+          alt="Astronaute"
+          className="imageAbout"
+        ></motion.img>
+      </div>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

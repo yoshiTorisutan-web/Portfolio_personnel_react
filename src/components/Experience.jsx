@@ -1,27 +1,29 @@
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/prop-types */
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
-import { motion } from 'framer-motion';
-import 'react-vertical-timeline-component/style.min.css';
-import { styles } from '../styles';
-import { experiences } from '../constants';
-import { SectionWrapper } from '../hoc';
-import { download, resume } from '../assets';
-import { textVariant } from '../utils/motion';
+} from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
+import "react-vertical-timeline-component/style.min.css";
+import { styles } from "../styles";
+import { experiences } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { download, resume } from "../assets";
+import { textVariant } from "../utils/motion";
 
-import '../index.css';
+import "../index.css";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{
-      background: '#eaeaec',
-      color: '#292929',
+      background: "#eaeaec",
+      color: "#292929",
       boxShadow:
-        'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+        "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
     }}
     contentArrowStyle={{
-      borderRight: '7px solid  #232631',
+      borderRight: "7px solid  #232631",
     }}
     date={
       <div>
@@ -39,14 +41,16 @@ const ExperienceCard = ({ experience }) => (
           className="w-[50%] h-[50%] object-contain"
         />
       </div>
-    }>
+    }
+  >
     <div>
       <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
         {experience.title}
       </h3>
       <p
         className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
-        style={{ margin: 0 }}>
+        style={{ margin: 0 }}
+      >
         {experience.company_name}
       </p>
     </div>
@@ -54,6 +58,13 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "../assets/personal/CV_Tristan.pdf";
+    link.download = "CV_Tristan.pdf";
+    link.click();
+  };
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -72,18 +83,18 @@ const Experience = () => {
           ))}
           <VerticalTimelineElement
             contentStyle={{
-              background: '#eaeaec',
-              color: '#292929',
+              background: "#eaeaec",
+              color: "#292929",
               boxShadow:
-                'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+                "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
             contentArrowStyle={{
-              borderRight: '7px solid  #232631',
+              borderRight: "7px solid  #232631",
             }}
-            iconStyle={{ background: '#333333' }}
+            iconStyle={{ background: "#333333" }}
             icon={
               <div className="flex justify-center items-center w-full h-full">
                 <img
@@ -92,39 +103,21 @@ const Experience = () => {
                   className="w-[45%] h-[45%] object-contain"
                 />
               </div>
-            }>
-            <button
-              className="live-demo flex justify-between 
-              sm:text-[18px] text-[14px] text-timberWolf 
-              font-bold font-beckman items-center py-5 pl-3 pr-3 
-              whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px] 
-              w-[125px] h-[46px] rounded-[10px] bg-jetLight 
-              sm:mt-[5px] mt-[5px] bg-input-cv transition duration-[0.2s] 
-              ease-in-out"
-              onClick={() =>
-                window.open(
-                  'resume link', //paste the link to your resume here
-                  '_blank'
-                )
-              }
-              onMouseOver={() => {
-                document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', download);
-              }}
-              onMouseOut={() => {
-                document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', download);
-              }}>
-              Mon CV
+            }
+          >
+            <div
+              className="live-demo flex justify-between items-center download-link"
+              onClick={handleDownload}
+            >
+              <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
+                Télécharger mon CV
+              </h3>
               <img
                 src={download}
                 alt="download"
-                className="download-btn sm:w-[26px] sm:h-[26px] 
-                w-[23px] h-[23px] object-contain"
+                className="ml-[20px] sm:w-[26px] sm:h-[26px] w-[23px] h-[23px] object-contain"
               />
-            </button>
+            </div>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
@@ -132,4 +125,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, 'work');
+export default SectionWrapper(Experience, "work");

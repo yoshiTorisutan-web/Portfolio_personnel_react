@@ -1,8 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { styles } from '../styles';
-import { navLinks } from '../constants';
 import { tristan, galaxy } from '../assets';
 
 const Hero = () => {
@@ -36,7 +34,7 @@ const Hero = () => {
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase">
-                Tristan
+                Tristan.
               </span>
             </h1>
           </div>
@@ -53,7 +51,7 @@ const Hero = () => {
           <a href="#about">
             <div
               className="w-[35px] h-[64px] rounded-3xl border-4 
-            border-french border-dim flex
+            border-french flex
             justify-center items-start p-2">
               <motion.div
                 animate={{

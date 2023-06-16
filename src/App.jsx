@@ -7,7 +7,8 @@ import {
   Navbar,
   Tech,
   Projects,
-  Footer
+  Footer,
+  ScrollToTopButton
 } from "./components";
 
 import './index.css';
@@ -50,6 +51,7 @@ const App = () => {
         <div className="relative z-0">
           <Footer />
         </div>
+        <ScrollToTopButton />
       </div>
     </BrowserRouter>
   );
