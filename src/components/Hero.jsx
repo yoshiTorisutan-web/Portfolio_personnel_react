@@ -28,7 +28,7 @@ const Hero = () => {
 
           <div>
             <h1
-              className={`${styles.heroHeadText} text-emerald-950 font-poppins uppercase`}>
+              className={`${styles.heroHeadText} text-emerald-900 font-poppins uppercase`}>
               Hello 👋 I'm{' '}
               <span
                 className="sm:text-battleGray sm:text-[90px] 
@@ -73,7 +73,7 @@ const Hero = () => {
           <img
             className="absolute bottom-0 ml-[50vw] 
             lg:ml-[60vw] md:ml-[60vw] xmd:ml-[45vw] 2xl:ml-[68vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
+            sm:h-[90vh] md:h-[70vh] xl:h-[80vh] smooth"
             src={tristan}
             alt="tristan"
           />

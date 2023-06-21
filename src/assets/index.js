@@ -4,7 +4,7 @@ import night from './backgrounds/night.jpg';
 import logo from './logo/Logo_Business.png';
 import logoTransparent from './logo/logo_transparent.png';
 
-import tristan from './personal/tristan.png';
+import tristan from './personal/tristan_green.png';
 import astronaut from './personal/astronaut.png';
 
 import backend from './icons/backend.png';
@@ -20,8 +20,6 @@ import creation from './icons/arts.png';
 import github from './icons/github.png';
 import close from './icons/close.png';
 import download from './icons/pdf.png';
-import pineapple from './icons/pineapple.png';
-import pineappleHover from './icons/pineappleHover.png';
 import menu from './icons/menu.png';
 import resume from './icons/resume.png';
 import send from './icons/send.png';
@@ -39,7 +37,7 @@ import reactjs from './tech/reactjs.png';
 import tailwind from './tech/tailwind.png';
 import graphql from './tech/graphql.png';
 import sass from './tech/sass.png';
-import angular from './tech/angular.png';
+import vue from './tech/vue.png';
 import bootstrap from './tech/bootstrap.png';
 import flutter from './tech/flutter.png';
 import mysql from './tech/mysql.png';
@@ -75,8 +73,6 @@ export {
   github,
   close,
   download,
-  pineapple,
-  pineappleHover,
   menu,
   resume,
   send,
@@ -93,7 +89,7 @@ export {
   reactjs,
   tailwind,
   sass,
-  angular,
+  vue,
   bootstrap,
   flutter,
   mysql,

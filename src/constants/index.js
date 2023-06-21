@@ -23,7 +23,7 @@ import {
   photo,
   video,
   sass,
-  angular,
+  vue,
   bootstrap,
   flutter,
   mysql,
@@ -134,8 +134,8 @@ const technologies = [
     icon: sass,
   },
   {
-    name: 'angular',
-    icon: angular,
+    name: 'vue',
+    icon: vue,
   },
   {
     name: 'bootstrap',

@@ -29,13 +29,13 @@ const Navbar = () => {
           <img
             src={logo} // your logo comes here
             alt="logo"
-            className="sm:w-[100px] sm:h-[100px] w-[45px] h-[45px] object-contain"
+            className="smooth sm:w-[100px] sm:h-[100px] w-[45px] h-[45px] object-contain"
           />
 
           {/* if you have text you want besides your logo it comes here.
           Otherwise delete this if you don't need it. */}
           <p
-            className="text-[21px] font-poppins
+            className="typewriter text-[21px] font-poppins
                 font-extrabold uppercase text-black"
           >
             Tristan Bossard
