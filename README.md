@@ -10,7 +10,7 @@ Ce projet est un portfolio personnel développé en utilisant React, une bibliot
 ## Fonctionnalités
 Le portfolio contient les fonctionnalités suivantes :
 
-- Accueil : Une page d'accueil présentant une brève introduction à mon parcours professionnel et mes compétences clés.
+- Accueil : Une bannière d'accueil me présentant.
 
 - À propos : Une section qui fournit des informations plus détaillées sur moi, mon éducation, mes compétences techniques et mes intérêts.
 
