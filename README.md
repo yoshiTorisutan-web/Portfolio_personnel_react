@@ -26,4 +26,4 @@ Le portfolio contient les fonctionnalités suivantes :
 * ReactJS
 * Tailwind
 * HTML/CSS/JS
-
+* JSON
