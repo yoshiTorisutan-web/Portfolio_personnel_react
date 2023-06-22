@@ -9,7 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { download, resume } from "../assets";
+import { download, resume, cv } from "../assets";
 import { textVariant } from "../utils/motion";
 
 import "../index.css";
@@ -58,13 +58,6 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "../assets/personal/CV_Tristan.pdf";
-    link.download = "CV_Tristan.pdf";
-    link.click();
-  };
-
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -105,18 +98,21 @@ const Experience = () => {
               </div>
             }
           >
-            <div
-              className="live-demo flex justify-between items-center download-link"
-              onClick={handleDownload}
-            >
-              <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
-                Télécharger mon CV
-              </h3>
-              <img
-                src={download}
-                alt="download"
-                className="ml-[20px] sm:w-[26px] sm:h-[26px] w-[23px] h-[23px] object-contain"
-              />
+            <div>
+              <a href={cv} download>
+                <div
+                  className="live-demo flex justify-between items-center download-link"
+                >
+                  <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
+                    Télécharger mon CV
+                  </h3>
+                  <img
+                    src={download}
+                    alt="download"
+                    className="ml-[20px] sm:w-[26px] sm:h-[26px] w-[23px] h-[23px] object-contain"
+                  />
+                </div>
+              </a>
             </div>
           </VerticalTimelineElement>
         </VerticalTimeline>

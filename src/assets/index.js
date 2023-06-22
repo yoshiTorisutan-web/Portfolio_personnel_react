@@ -26,6 +26,8 @@ import send from './icons/send.png';
 import sendHover from './icons/send.png';
 import plus from './icons/plus.png';
 
+import cv from './personal/CV_Tristan.pdf';
+
 import css from './tech/css.png';
 import docker from './tech/docker.png';
 import figma from './tech/figma.png';
@@ -103,5 +105,6 @@ export {
   web,
   pasquier,
   espl,
-  eram
+  eram,
+  cv
 };
