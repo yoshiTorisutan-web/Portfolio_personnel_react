@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { tristan, galaxy } from '../assets';
 
+import "../index.css";
+
 const Hero = () => {
   return (
     <>
@@ -28,7 +30,7 @@ const Hero = () => {
 
           <div>
             <h1
-              className={`${styles.heroHeadText} text-emerald-900 font-poppins uppercase`}>
+              className={`${styles.heroHeadText} text-green-950 font-poppins uppercase`}>
               Hello 👋 I'm{' '}
               <span
                 className="sm:text-battleGray sm:text-[90px] 
