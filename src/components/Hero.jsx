@@ -31,7 +31,7 @@ const Hero = () => {
           <div>
             <h1
               className={`${styles.heroHeadText} text-green-950 font-poppins uppercase`}>
-              Hello 👋 I'm{' '}
+              Hello👋 I'm{' '}
               <span
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
