@@ -5,7 +5,8 @@
 </div>
 
 # Portfolio en React
-Ce projet est un portfolio personnel développé en utilisant React, une bibliothèque JavaScript populaire pour la création d'interfaces utilisateur. 
+Ce projet est un portfolio personnel développé en utilisant React, une bibliothèque JavaScript populaire pour la création d'interfaces utilisateur.
+
 Il vise à présenter mes compétences, expériences et projets en tant que développeur.
 
 ## Fonctionnalités
