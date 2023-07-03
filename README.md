@@ -5,20 +5,24 @@
 </div>
 
 # Portfolio en React
-Ce projet est un portfolio personnel développé en utilisant React, une bibliothèque JavaScript populaire pour la création d'interfaces utilisateur. Il vise à présenter mes compétences, expériences et projets en tant que développeur.
+Ce projet est un portfolio personnel développé en utilisant React, une bibliothèque JavaScript populaire pour la création d'interfaces utilisateur.
+
+Il vise à présenter mes compétences, expériences et projets en tant que développeur.
 
 ## Fonctionnalités
 Le portfolio contient les fonctionnalités suivantes :
 
-- Accueil : Une bannière d'accueil me présentant.
+- Accueil => Une bannière d'accueil me présentant.
 
-- À propos : Une section qui fournit des informations plus détaillées sur moi, mon éducation, mes compétences techniques et mes intérêts.
+- À propos => Une section qui fournit des informations plus détaillées sur moi et mes intérêts.
 
-- Expérience : Une liste de mes expériences professionnelles passées, mettant en évidence les postes occupés, les responsabilités et les accomplissements pertinents.
+- Technologies => Une liste des technologies que j'ai pu utilisé tout au long de mes différents projets.
 
-- Projets : Une galerie de mes projets de développement, avec des descriptions, des captures d'écran et des liens vers les dépôts GitHub ou les sites en ligne.
+- Expériences => Une liste de mes expériences professionnelles passées, mettant en évidence les entreprises et les postes occupés.
 
-- Contact : Un formulaire de contact permettant aux visiteurs de me contacter directement par e-mail.
+- Projets => Une galerie de mes projets de développement, avec des descriptions et des liens vers les dépôts GitHub ou les sites en ligne.
+
+- Contact => Un formulaire de contact permettant aux visiteurs de me contacter directement par e-mail.
 
 <!-- Réalisé -->
 # Réalisé avec :
@@ -27,3 +31,8 @@ Le portfolio contient les fonctionnalités suivantes :
 * Tailwind
 * HTML/CSS/JS
 * JSON
+
+<!-- Inspiration -->
+# Inspiré par :
+
+@shaqdeff
