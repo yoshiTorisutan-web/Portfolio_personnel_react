@@ -10,55 +10,41 @@ import { fadeIn } from "../utils/motion";
 
 import "../index.css";
 
-const Contact = (index) => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+export const Contact = (index) => {
+  const form = useRef();
   const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-
-    setForm({ ...form, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    // sign up on emailjs.com (select the gmail service and connect your account).
-    //click on create a new template then click on save.
     emailjs
-      .send(
-        "serviceID", // paste your ServiceID here (you'll get one when your service is created).
-        "templateID", // paste your TemplateID here (you'll find it under email templates).
-        {
-          from_name: form.name,
-          to_name: "YourName", // put your name here.
-          from_email: form.email,
-          to_email: "youremail@gmail.com", //put your email here.
-          message: form.message,
-        },
-        "yourpublickey" //paste your Public Key here. You'll get it in your profile section.
+      .sendForm(
+        "service_0tcfms9",
+        "template_we29617",
+        form.current,
+        "tQ30iSG0cOmJqiA-V"
       )
       .then(
         () => {
           setLoading(false);
-          alert("Je vous remercie. Je reviendrai vers vous dès que possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+          // Afficher le message d'alerte personnalisé de succès
+          setMessage(
+            <div className="bg-green-500 text-white p-4 rounded">
+              Je vous remercie. Je reviendrai vers vous dès que possible.
+            </div>
+          );
         },
         (error) => {
           setLoading(false);
           console.log(error);
-          alert("Un problème s'est produit. Veuillez réessayer.");
+          // Afficher le message d'alerte personnalisé d'erreur
+          setMessage(
+            <div className="bg-red-500 text-white p-4 rounded">
+              Un problème sest produit. Veuillez réessayer.
+            </div>
+          );
         }
       );
   };
@@ -75,8 +61,8 @@ const Contact = (index) => {
         <h3 className={styles.sectionHeadTextLight}>Contact.</h3>
 
         <form
-          ref={formRef}
-          onSubmit={handleSubmit}
+          ref={form}
+          onSubmit={sendEmail}
           className="mt-10 flex flex-col gap-6 font-poppins"
         >
           <label className="flex flex-col">
@@ -86,8 +72,6 @@ const Contact = (index) => {
             <input
               type="text"
               name="name"
-              value={form.name}
-              onChange={handleChange}
               placeholder="Votre nom & prénom"
               className="bg-color-input py-4 px-6
               placeholder:text-taupe
@@ -102,8 +86,6 @@ const Contact = (index) => {
             <input
               type="email"
               name="email"
-              value={form.email}
-              onChange={handleChange}
               placeholder="Votre adresse mail"
               className="bg-color-input py-4 px-6
               placeholder:text-taupe
@@ -118,8 +100,6 @@ const Contact = (index) => {
             <textarea
               rows="7"
               name="message"
-              value={form.message}
-              onChange={handleChange}
               placeholder="Votre message"
               className="bg-color-input py-4 px-6
               placeholder:text-taupe
@@ -154,6 +134,7 @@ const Contact = (index) => {
               w-[23px] h-[23px] object-contain"
             />
           </button>
+          {message && <div className="mt-4">{message}</div>}
         </form>
       </motion.div>
       <motion.div

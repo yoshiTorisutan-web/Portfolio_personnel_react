@@ -49,7 +49,7 @@ import symfony from './tech/symfony.png'
 
 import pasquier from './company/pasquier.png';
 import espl from './company/ESPL.png';
-import eram from './company/eram.png';
+import autodidacte from './company/autodidacte.png';
 
 import mobile from './projects/application_mobile.png';
 import graphisme from './projects/graphisme.png';
@@ -105,6 +105,6 @@ export {
   web,
   pasquier,
   espl,
-  eram,
+  autodidacte,
   cv
 };

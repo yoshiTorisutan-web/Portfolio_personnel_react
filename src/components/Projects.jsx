@@ -34,7 +34,7 @@ const ProjectCard = ({
       onClick={() => handleClick(id)}
     >
       <div
-        className="absolute top-0 left-0 z-10 bg-jetLight 
+        className="absolute top-0 left-0 z-10 bg-green-950 
       h-full w-full opacity-[0.5] rounded-[24px]"
       ></div>
 

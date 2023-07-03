@@ -31,199 +31,197 @@ import {
   python,
   symfony,
   pasquier,
+  autodidacte,
   espl,
-  eram
-} from '../assets';
+} from "../assets";
 
 export const navLinks = [
   {
-    id: 'about',
-    title: 'A propos',
+    id: "about",
+    title: "A propos",
   },
   {
-    id: 'projects',
-    title: 'Projets',
+    id: "projects",
+    title: "Projets",
   },
   {
-    id: 'contact',
-    title: 'Contact',
+    id: "contact",
+    title: "Contact",
   },
 ];
 
 const services = [
   {
-    title: 'Développeur Frontend',
+    title: "Développeur Frontend",
     icon: frontend,
   },
   {
-    title: 'Développeur Backend',
+    title: "Développeur Backend",
     icon: backend,
   },
   {
-    title: 'Webdesigner',
+    title: "Webdesigner",
     icon: ux,
   },
   {
-    title: 'Graphiste',
+    title: "Graphiste",
     icon: art,
   },
 ];
 
 const hobbies = [
   {
-    title: 'Sports automobiles',
+    title: "Sports automobiles",
     icon: racing,
   },
   {
-    title: 'Basketball',
+    title: "Basketball",
     icon: basketball,
   },
   {
-    title: 'Jeux-vidéos',
+    title: "Jeux-vidéos",
     icon: videogames,
   },
   {
-    title: 'Création',
+    title: "Création",
     icon: creation,
   },
 ];
 
 const technologies = [
   {
-    name: 'HTML 5',
+    name: "HTML 5",
     icon: html,
   },
   {
-    name: 'CSS 3',
+    name: "CSS 3",
     icon: css,
   },
   {
-    name: 'JavaScript',
+    name: "JavaScript",
     icon: javascript,
   },
   {
-    name: 'React JS',
+    name: "React JS",
     icon: reactjs,
   },
   {
-    name: 'Tailwind CSS',
+    name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: 'Node JS',
+    name: "Node JS",
     icon: nodejs,
   },
   {
-    name: 'graphql',
+    name: "graphql",
     icon: graphql,
   },
   {
-    name: 'git',
+    name: "git",
     icon: git,
   },
   {
-    name: 'figma',
+    name: "figma",
     icon: figma,
   },
   {
-    name: 'docker',
+    name: "docker",
     icon: docker,
   },
   {
-    name: 'sass',
+    name: "sass",
     icon: sass,
   },
   {
-    name: 'vue',
+    name: "vue",
     icon: vue,
   },
   {
-    name: 'bootstrap',
+    name: "bootstrap",
     icon: bootstrap,
   },
   {
-    name: 'flutter',
+    name: "flutter",
     icon: flutter,
   },
   {
-    name: 'mysql',
+    name: "mysql",
     icon: mysql,
   },
   {
-    name: 'php',
+    name: "php",
     icon: php,
   },
   {
-    name: 'python',
+    name: "python",
     icon: python,
   },
   {
-    name: 'symfony',
+    name: "symfony",
     icon: symfony,
   },
 ];
 
 const experiences = [
   {
-    title: 'Développeur Frontend',
-    company_name: 'Pasquier',
+    title: "Développement web et Création numérique",
+    company_name: "Autodidacte",
+    icon: autodidacte,
+    iconBg: "#333333",
+    date: "Févr 2021 - Août 2021",
+  },
+  {
+    title: "Développeur Frontend",
+    company_name: "Pasquier",
     icon: pasquier,
-    iconBg: '#333333',
-    date: 'Sept 2021 - Août 2022',
+    iconBg: "#333333",
+    date: "Sept 2021 - Août 2022",
   },
   {
-    title: 'Développeur Backend',
-    company_name: 'ESPL',
+    title: "Développeur Backend",
+    company_name: "ESPL",
     icon: espl,
-    iconBg: '#333333',
-    date: 'Sept 2022 - Août 2023',
-  },
-  {
-    title: 'Assistant chef de projet digital',
-    company_name: 'Groupe Eram  Gemo',
-    icon: eram,
-    iconBg: '#333333',
-    date: 'Sept 2023 - Août 2024',
+    iconBg: "#333333",
+    date: "Sept 2022 - Août 2023",
   },
 ];
 
 const projects = [
   {
-    id: 'project-1',
-    name: 'Site Web',
-    description: 'Découvrez un premier aperçu de l’ensemble de mes créations.',
+    id: "project-1",
+    name: "Site Web",
+    description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
     image: web,
-    repo: 'https://github.com/yoshiTorisutan-web/F1_Express',
+    repo: "https://github.com/yoshiTorisutan-web/F1_Express",
   },
   {
-    id: 'project-2',
-    name: 'Application Mobile',
-    description:
-      'Découvrez un premier aperçu de l’ensemble de mes créations.',
+    id: "project-2",
+    name: "Application Mobile",
+    description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
     image: mobile,
-    repo: 'https://github.com/yoshiTorisutan-web/MyDigitalProject_Marc',
+    repo: "https://github.com/yoshiTorisutan-web/MyDigitalProject_Marc",
   },
   {
-    id: 'project-3',
-    name: 'Montage Photo',
-    description: 'Découvrez un premier aperçu de l’ensemble de mes créations.',
+    id: "project-3",
+    name: "Montage Photo",
+    description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
     image: photo,
-    repo: 'https://www.pinterest.fr/yoshiTorisutan_creative/',
+    repo: "https://www.pinterest.fr/yoshiTorisutan_creative/",
   },
   {
-    id: 'project-4',
-    name: 'Graphisme/Dessin',
+    id: "project-4",
+    name: "Graphisme/Dessin",
     description: `Découvrez un premier aperçu de l’ensemble de mes créations.`,
     image: graphisme,
-    repo: 'https://www.pinterest.fr/yoshiTorisutan_creative/',
+    repo: "https://www.pinterest.fr/yoshiTorisutan_creative/",
   },
   {
-    id: 'project-5',
-    name: 'Montage Vidéo',
-    description:
-      'Découvrez un premier aperçu de l’ensemble de mes créations.',
+    id: "project-5",
+    name: "Montage Vidéo",
+    description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
     image: video,
-    repo: 'https://www.youtube.com/channel/UCYYPTNdt3bpRT8BGQIC9YJg',
+    repo: "https://www.youtube.com/channel/UCYYPTNdt3bpRT8BGQIC9YJg",
   },
 ];
 
