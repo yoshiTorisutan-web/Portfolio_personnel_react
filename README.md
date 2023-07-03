@@ -14,11 +14,11 @@ Le portfolio contient les fonctionnalités suivantes :
 
 - Accueil : Une bannière d'accueil me présentant.
 
-- À propos : Une section qui fournit des informations plus détaillées sur moi, mon éducation, mes compétences techniques et mes intérêts.
+- À propos : Une section qui fournit des informations plus détaillées sur moi et mes intérêts.
 
 - Technologies : Une liste des technologies que j'ai pu utilisé tout au long de mes différents projets.
 
-- Expérience : Une liste de mes expériences professionnelles passées, mettant en évidence les postes occupés, les responsabilités et les accomplissements pertinents.
+- Expériences : Une liste de mes expériences professionnelles passées, mettant en évidence les entreprises et les postes occupés.
 
 - Projets : Une galerie de mes projets de développement, avec des descriptions et des liens vers les dépôts GitHub ou les sites en ligne.
 
