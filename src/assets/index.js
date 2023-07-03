@@ -57,6 +57,8 @@ import photo from './projects/montage_photo.jpg';
 import video from './projects/montage_video.png';
 import web from './projects/site_web.png';
 
+import rocket from './icons/rocket.png';
+
 export {
   night,
   galaxy,
@@ -106,5 +108,6 @@ export {
   pasquier,
   espl,
   autodidacte,
-  cv
+  cv,
+  rocket
 };

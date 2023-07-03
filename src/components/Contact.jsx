@@ -7,6 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { send, sendHover } from "../assets";
 import { fadeIn } from "../utils/motion";
+import { rocket } from "../assets";
 
 import "../index.css";
 
@@ -142,7 +143,7 @@ export const Contact = (index) => {
         variants={fadeIn("right", "spring", 5 * index, 5)}
       >
         <img
-          src="../../public/rocket.png"
+          src={rocket}
           alt="rocket"
           className="max-h-[600px] object-contain pl-20"
         />
