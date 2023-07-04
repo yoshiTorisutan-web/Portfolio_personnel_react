@@ -90,10 +90,10 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Qui je suis ?</h2>
       </motion.div>
 
-      <div className="containerAbout">
+      <div className="containerAbout flex flex-col md:flex-row items-center">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="textAbout mt-4 text-jet text-[18px] max-w-3xl leading-[30px]"
+          className="textAbout mt-4 text-jet text-[18px] max-w-3xl leading-[30px] md:mr-8"
         >
           Je suis développeur web basé dans la ville de Cholet, terre de basket.
           <br></br>
@@ -121,7 +121,7 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           src={astronaut}
           alt="Astronaute"
-          className="imageAbout"
+          className="imageAbout mt-4 md:mt-0"
         ></motion.img>
       </div>
 

@@ -33,18 +33,18 @@ const Navbar = () => {
           />
 
           {/* if you have text you want besides your logo it comes here.
-          Otherwise delete this if you don't need it. */}
-          <p className="typewriter text-[8px] sm:text-[10px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[21px] font-poppins font-extrabold uppercase text-black">
+  Otherwise delete this if you don't need it. */}
+          <p className="typewriter text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] font-poppins font-extrabold uppercase text-black mr-2">
             Tristan Bossard
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
+        <ul className="list-none hidden sm:flex flex-row gap-6 mt-2">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? "textColor-current" : "text-black"
-              } textColor-notcurrent text-[8px] sm:text-[10px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[21px] font-medium font-mova uppercase tracking-[3px] cursor-pointer nav-links`}
+              } textColor-notcurrent text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] font-medium font-mova uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -53,13 +53,13 @@ const Navbar = () => {
         </ul>
 
         {/* mobile */}
-        <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           {toggle ? (
             <div
               className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${
-                  toggle ? "menu-open" : "menu-close"
-                }`}
+        top-0 left-0 w-screen h-[100vh] z-10 menu ${
+          toggle ? "menu-open" : "menu-close"
+        }`}
             >
               <div className="flex justify-end">
                 <img
@@ -71,7 +71,7 @@ const Navbar = () => {
               </div>
               <ul
                 className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]"
+        items-start justify-end mt-4 -ml-[35px]"
               >
                 {navLinks.map((nav) => (
                   <li
@@ -79,8 +79,8 @@ const Navbar = () => {
                     key={nav.id}
                     className={`${
                       active === nav.title ? "textColor-current" : "text-black"
-                    } text-[20px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
+                    } text-[14px] font-bold font-arenq 
+            uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
