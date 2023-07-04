@@ -51,10 +51,7 @@ export const Contact = (index) => {
   };
 
   return (
-    <div
-      className="-mt-[8rem] xl:flex-row flex-col-reverse 
-      flex gap-10 overflow-hidden"
-    >
+    <div className="-mt-[8rem] xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-contacts p-8 rounded-2xl"
@@ -114,7 +111,7 @@ export const Contact = (index) => {
             className="live-demo flex justify-center sm:gap-4 
             gap-3 sm:text-[20px] text-[16px] text-white
             font-bold font-beckman items-center py-5
-            whitespace-nowrap sm:w-[200px] sm:h-[50px] 
+            whitespace-nowrap sm:w-[250px] sm:h-[50px] 
             w-[100px] h-[45px] rounded-[10px] bg-color-input
             hover:bg-black hover:text-white
             transition duration-[0.2s] ease-in-out"
@@ -139,7 +136,7 @@ export const Contact = (index) => {
         </form>
       </motion.div>
       <motion.div
-        className="flex-[0.25] flex items-center justify-center pl-10"
+        className="flex-[0.25] flex items-center justify-center pl-10 mt-10 xl:mt-0"
         variants={fadeIn("right", "spring", 5 * index, 5)}
       >
         <img

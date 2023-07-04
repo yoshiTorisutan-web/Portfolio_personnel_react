@@ -27,17 +27,14 @@ const Navbar = () => {
           }}
         >
           <img
-            src={logo} // your logo comes here
+            src={logo} // votre logo ici
             alt="logo"
             className="smooth sm:w-[100px] sm:h-[100px] w-[45px] h-[45px] object-contain"
           />
 
           {/* if you have text you want besides your logo it comes here.
           Otherwise delete this if you don't need it. */}
-          <p
-            className="typewriter text-[21px] font-poppins
-                font-extrabold uppercase text-black"
-          >
+          <p className="typewriter text-[8px] sm:text-[10px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[21px] font-poppins font-extrabold uppercase text-black">
             Tristan Bossard
           </p>
         </Link>
@@ -47,8 +44,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "textColor-current" : "text-black"
-              } textColor-notcurrent text-[21px] font-medium font-mova 
-                uppercase tracking-[3px] cursor-pointer nav-links`}
+              } textColor-notcurrent text-[8px] sm:text-[10px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[21px] font-medium font-mova uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -83,7 +79,7 @@ const Navbar = () => {
                     key={nav.id}
                     className={`${
                       active === nav.title ? "textColor-current" : "text-black"
-                    } text-[88px] font-bold font-arenq 
+                    } text-[20px] font-bold font-arenq 
                       uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);

@@ -304,13 +304,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 4px; /* Bordure du pouce de la barre de défilement */
 }
 
-/*Footer*/
+/* Footer */
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #111d13;
-  padding: 100px 100px 10px 100px;
 }
 
 .footer__left {
@@ -328,9 +324,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer__text {
-  font-size: 16px;
   color: #ffffff;
-  font-family: poppins;
 }
 
 /*ScrollToTop*/
