@@ -51,7 +51,7 @@ export const Contact = (index) => {
   };
 
   return (
-    <div className="-mt-[8rem] xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="-mt-[2rem] xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-contacts p-8 rounded-2xl"
