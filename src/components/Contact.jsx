@@ -109,12 +109,12 @@ export const Contact = (index) => {
           <button
             type="submit"
             className="live-demo flex justify-center sm:gap-4 
-            gap-3 sm:text-[20px] text-[16px] text-white
-            font-bold font-beckman items-center py-5
-            whitespace-nowrap sm:w-[250px] sm:h-[50px] 
-            w-[100px] h-[45px] rounded-[10px] bg-color-input
-            hover:bg-black hover:text-white
-            transition duration-[0.2s] ease-in-out"
+    gap-3 sm:text-[20px] text-[16px] text-white
+    font-bold font-beckman items-center py-5
+    whitespace-nowrap sm:w-[250px] sm:h-[50px] 
+    w-[150px] h-[50px] rounded-[10px] bg-color-input
+    hover:bg-black hover:text-white
+    transition duration-[0.2s] ease-in-out"
             onMouseOver={() => {
               document
                 .querySelector(".contact-btn")
@@ -129,9 +129,10 @@ export const Contact = (index) => {
               src={send}
               alt="send"
               className="contact-btn sm:w-[26px] sm:h-[26px] 
-              w-[23px] h-[23px] object-contain"
+      w-[23px] h-[23px] object-contain"
             />
           </button>
+
           {message && <div className="mt-4">{message}</div>}
         </form>
       </motion.div>

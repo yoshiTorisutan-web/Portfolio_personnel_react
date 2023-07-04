@@ -14,13 +14,15 @@ import { SectionWrapper } from "../hoc";
 import { astronaut } from "../assets";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { useMediaQuery } from "@react-hook/media-query";
 
 import "../index.css";
 
 const ServiceCard = ({ index, title, icon }) => {
+  const isMobile = useMediaQuery("(max-width: 767px)");
   return (
     <motion.div
-      variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+      variants={isMobile ? {} : fadeIn("right", "spring", 0.5 * index, 0.75)}
       className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-card"
     >
       <div
@@ -41,9 +43,10 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const HobbiesCard = ({ index, title, icon }) => {
+  const isMobile = useMediaQuery("(max-width: 767px)");
   return (
     <motion.div
-      variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+      variants={isMobile ? {} : fadeIn("right", "spring", 0.5 * index, 0.75)}
       className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-card"
     >
       <div
@@ -64,6 +67,7 @@ const HobbiesCard = ({ index, title, icon }) => {
 };
 
 const SocialLinks = () => {
+  const isMobile = useMediaQuery("(max-width: 767px)");
   return (
     <div className="flex items-center">
       <p>
@@ -83,16 +87,17 @@ const SocialLinks = () => {
 };
 
 const About = () => {
+  const isMobile = useMediaQuery("(max-width: 767px)");
   return (
-    <div className="-mt-[6rem]">
-      <motion.div variants={textVariant()}>
+    <div className="-mt-[2rem]">
+      <motion.div variants={isMobile ? {} : textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Qui je suis ?</h2>
       </motion.div>
 
       <div className="containerAbout flex flex-col md:flex-row items-center">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={isMobile ? {} : fadeIn("", "", 0.1, 1)}
           className="textAbout mt-4 text-jet text-[18px] max-w-3xl leading-[30px] md:mr-8"
         >
           Je suis développeur web basé dans la ville de Cholet, terre de basket.
@@ -118,7 +123,7 @@ const About = () => {
         </motion.p>
 
         <motion.img
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={isMobile ? {} : fadeIn("", "", 0.1, 1)}
           src={astronaut}
           alt="Astronaute"
           className="imageAbout mt-4 md:mt-0"
@@ -131,13 +136,13 @@ const About = () => {
         ))}
       </div>
 
-      <motion.div className="mt-[8rem]" variants={textVariant()}>
+      <motion.div className="mt-[8rem]" variants={isMobile ? {} : textVariant()}>
         <p className={styles.sectionSubText}>Présentation</p>
         <h2 className={styles.sectionHeadText}>A propos</h2>
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={isMobile ? {} : fadeIn("", "", 0.1, 1)}
         className="mt-4 text-jet text-[18px] max-w-3xl leading-[30px]"
       >
         Étudiant en reconversion dans le web au GRETA d'Angers, je développe mes
@@ -164,11 +169,11 @@ const About = () => {
         <br></br>
       </motion.p>
 
-      <motion.div className="mt-[4rem]" variants={textVariant()}>
+      <motion.div className="mt-[4rem]" variants={isMobile ? {} : textVariant()}>
         <h2 className={styles.sectionHeadText}>Hobbies</h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-10 mb-20 flex flex-wrap gap-10">
         {hobbies.map((service, index) => (
           <HobbiesCard key={service.title} index={index} {...service} />
         ))}
