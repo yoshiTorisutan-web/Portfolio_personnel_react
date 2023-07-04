@@ -11,7 +11,7 @@ import { github, plus } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 
-import '../index.css';
+import "../index.css";
 
 const ProjectCard = ({
   id,
@@ -45,12 +45,12 @@ const ProjectCard = ({
       />
 
       {active !== id ? (
-        <div className="flex items-center justify-start pr-[4.5rem]">
+        <div className="flex items-center justify-center">
           <h3
             className="font-extrabold font-beckman uppercase w-[200px] h-[30px] 
-        whitespace-nowrap sm:text-[27px] text-[18px] text-timberWolf tracking-[1px]
-        absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
-        leading-none"
+            whitespace-nowrap sm:text-[27px] text-[18px] text-timberWolf 
+            tracking-[1px] absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] 
+            lg:origin-[0,0] leading-none text-center"
           >
             {name}
           </h3>
@@ -111,11 +111,11 @@ const Projects = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
         >
-          Ces projets démontrent mon expertise avec des exemples pratiques de
-          de mon travail, y compris de brèves descriptions et des liens vers des
-          et des démonstrations en direct. Ils démontrent ma capacité à relever des
-          à relever des défis complexes, à m'adapter à diverses technologies et à
-          efficacement les projets.
+          Ces projets démontrent mon expertise avec des exemples pratiques de de
+          mon travail, y compris de brèves descriptions et des liens vers des et
+          des démonstrations en direct. Ils démontrent ma capacité à relever des
+          à relever des défis complexes, à m'adapter à diverses technologies et
+          à efficacement les projets.
         </motion.p>
       </div>
 
