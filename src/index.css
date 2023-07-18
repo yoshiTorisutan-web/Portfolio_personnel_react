@@ -330,8 +330,8 @@ body::-webkit-scrollbar-thumb {
 /*ScrollToTop*/
 .scroll-to-top-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   background-color: #415d43d4;
   color: #ffff;
   padding: 10px 15px;

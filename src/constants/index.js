@@ -1,7 +1,7 @@
 import {
-  frontend,
-  backend,
-  ux,
+  dev,
+  integrateur,
+  webdesigner,
   art,
   racing,
   videogames,
@@ -52,16 +52,16 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Développeur Frontend",
-    icon: frontend,
+    title: "Développeur web",
+    icon: dev,
   },
   {
-    title: "Développeur Backend",
-    icon: backend,
+    title: "Intégrateur web",
+    icon: integrateur,
   },
   {
     title: "Webdesigner",
-    icon: ux,
+    icon: webdesigner,
   },
   {
     title: "Graphiste",

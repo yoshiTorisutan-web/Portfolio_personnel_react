@@ -7,10 +7,10 @@ import logoTransparent from './logo/logo_transparent.png';
 import tristan from './personal/tristan_green.png';
 import astronaut from './personal/astronaut.png';
 
-import backend from './icons/backend.png';
-import ux from './icons/ux.png';
-import frontend from './icons/frontend.png';
-import art from './icons/art_palette.png';
+import dev from './icons/programmation.png';
+import integrateur from './icons/hebergement-web.png';
+import webdesigner from './icons/webdesigner.png';
+import art from './icons/arts.png';
 
 import racing from './icons/voiture-de-course.png';
 import basketball from './icons/basketball.png';
@@ -66,9 +66,9 @@ export {
   logoTransparent,
   tristan,
   astronaut,
-  backend,
-  ux,
-  frontend,
+  dev,
+  integrateur,
+  webdesigner,
   art,
   racing,
   videogames,
