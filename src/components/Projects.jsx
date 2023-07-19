@@ -113,7 +113,10 @@ const Projects = () => {
         >
           Ces projets démontrent mon expertise avec des exemples pratiques de de
           mon travail, y compris de brèves descriptions et des liens vers des et
-          des démonstrations en direct. Ils démontrent ma capacité à relever des
+          des démonstrations en direct.
+          <br></br>
+          <br></br>
+          Ils démontrent ma capacité à relever des
           à relever des défis complexes, à m'adapter à diverses technologies et
           à efficacement les projets.
         </motion.p>
