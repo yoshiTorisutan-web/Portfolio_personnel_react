@@ -123,12 +123,14 @@ const About = () => {
           <SocialLinks />
         </motion.p>
 
-        <motion.img
-          variants={isMobile ? {} : fadeIn("", "", 0.1, 1)}
-          src={astronaut}
-          alt="Astronaute"
-          className="imageAbout mt-4 md:mt-0"
-        ></motion.img>
+        {!isMobile && (
+          <motion.img
+            variants={fadeIn("", "", 0.1, 1)}
+            src={astronaut}
+            alt="Astronaute"
+            className="imageAbout mt-4 md:mt-0"
+          ></motion.img>
+        )}
       </div>
 
       <div className="mt-20 flex flex-wrap gap-10">
@@ -167,8 +169,10 @@ const About = () => {
         <br></br>
         <br></br>
         Mon objectif final ? Perfectionner mes compétences en développement web
-        et webdesign et acquérir une casquette de <b>chef de projet digital</b> à la
-        fin de mes études.
+        et webdesign et acquérir une casquette de <b>
+          chef de projet digital
+        </b>{" "}
+        à la fin de mes études.
         <br></br>
         <br></br>
         N’hésitez pas à parcourir mon travail. Bien entendu, je n'ai pas tout

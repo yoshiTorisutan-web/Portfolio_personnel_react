@@ -8,10 +8,12 @@ import { slideIn } from "../utils/motion";
 import { send, sendHover } from "../assets";
 import { fadeIn } from "../utils/motion";
 import { rocket } from "../assets";
+import { useMediaQuery } from "@react-hook/media-query";
 
 import "../index.css";
 
 export const Contact = (index) => {
+  const isMobile = useMediaQuery("(max-width: 767px)");
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
@@ -136,16 +138,18 @@ export const Contact = (index) => {
           {message && <div className="mt-4">{message}</div>}
         </form>
       </motion.div>
-      <motion.div
-        className="flex-[0.25] flex items-center justify-center pl-10 mt-10 xl:mt-0"
-        variants={fadeIn("right", "spring", 5 * index, 5)}
-      >
-        <img
-          src={rocket}
-          alt="rocket"
-          className="max-h-[600px] object-contain pl-20"
-        />
-      </motion.div>
+      {!isMobile && (
+        <motion.div
+          className="flex-[0.25] flex items-center justify-center pl-10 mt-10 xl:mt-0"
+          variants={fadeIn("right", "spring", 5 * index, 5)}
+        >
+          <img
+            src={rocket}
+            alt="rocket"
+            className="max-h-[600px] object-contain pl-20"
+          />
+        </motion.div>
+      )}
     </div>
   );
 };
