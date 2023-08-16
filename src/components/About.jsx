@@ -31,7 +31,7 @@ const ServiceCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450,
         }}
-        className="card rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="cardOne rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
         <img src={icon} alt={title} className="w-16 h-16 object-contain" />
         <h3 className="text-white-100 text-[18px] font-bold text-center">
@@ -55,7 +55,7 @@ const HobbiesCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450,
         }}
-        className="card rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="cardTwo rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
         <img src={icon} alt={title} className="w-16 h-16 object-contain" />
         <h3 className="text-white-100 text-[18px] font-bold text-center">
