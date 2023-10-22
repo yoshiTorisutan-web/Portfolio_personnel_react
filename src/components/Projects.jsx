@@ -111,14 +111,12 @@ const Projects = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
         >
-          Ces projets démontrent mon expertise avec des exemples pratiques de de
-          mon travail, y compris de brèves descriptions et des liens vers des et
-          des démonstrations en direct.
+          Ces projets démontrent mon expertise avec des exemples pratiques de
+          mon travail, y compris de brèves descriptions et des liens vers démonstrations en direct.
           <br></br>
           <br></br>
-          Ils démontrent ma capacité à relever des
-          à relever des défis complexes, à m'adapter à diverses technologies et
-          à efficacement les projets.
+          Ils démontrent ma capacité à relever des des défis complexes, à m'adapter à diverses technologies et
+          à travailler efficacement sur de nouveaux projets.
         </motion.p>
       </div>
 
