@@ -183,7 +183,14 @@ const experiences = [
     company_name: "ESPL",
     icon: espl,
     iconBg: "#333333",
-    date: "Sept 2022 - Août 2025",
+    date: "Sept 2022 - Août 2023",
+  },
+  {
+    title: "Chef de projet numérique",
+    company_name: "ESPL",
+    icon: espl,
+    iconBg: "#333333",
+    date: "Sept 2023 - Août 2025",
   },
 ];
 
