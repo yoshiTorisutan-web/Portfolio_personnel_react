@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { tristan, galaxy } from "../assets";
 
 import "../index.css";
+import "./animationHero.js";
 
 const Hero = () => {
   return (
@@ -44,6 +45,9 @@ const Hero = () => {
                 Tristan.
               </span>
             </h1>
+            <a href="https://tristanbossard-besoin-projet.softr.app">
+              <button className="bubbly-button text-timberWolf font-medium mb-4">Besoin d'aide pour un projet ?</button>
+            </a>
           </div>
           <div
             className="w-screen flex flex-col items-start 
