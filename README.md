@@ -24,6 +24,8 @@ Le portfolio contient les fonctionnalités suivantes :
 
 - Contact => Un formulaire de contact permettant aux visiteurs de me contacter directement par e-mail.
 
+- Besoin d'aide pour un projet => un formulaire de contact pour réaliser un projet aux visiteurs (réalisé avec Softr)
+
 <!-- Réalisé -->
 # Réalisé avec :
 
@@ -31,6 +33,8 @@ Le portfolio contient les fonctionnalités suivantes :
 * Tailwind
 * HTML/CSS/JS
 * JSON
+* Softr
+* Airtable
 
 <!-- Inspiration -->
 # Inspiré par :
