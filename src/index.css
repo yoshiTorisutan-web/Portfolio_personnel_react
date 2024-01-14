@@ -567,6 +567,14 @@ body::-webkit-scrollbar-thumb {
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
   background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
   }
+
+  @media (max-width: 768px) {
+    /* Mobile styles */
+    font-size: 0.7em;
+    padding: 0.7em 1.2em;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
  
   &:active{
     transform: scale(0.9);

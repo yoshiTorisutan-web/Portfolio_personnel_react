@@ -46,7 +46,9 @@ const Hero = () => {
               </span>
             </h1>
             <a href="https://tristanbossard-besoin-projet.softr.app">
-              <button className="bubbly-button text-timberWolf font-medium mb-4">Besoin d'aide pour un projet ?</button>
+              <button className="bubbly-button text-timberWolf font-medium mb-4 lg:text-xl">
+                Besoin d'aide pour un projet ?
+              </button>
             </a>
           </div>
           <div
