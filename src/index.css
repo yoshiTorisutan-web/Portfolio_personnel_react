@@ -505,8 +505,8 @@ body::-webkit-scrollbar-thumb {
 /* Button Projet */
 .bubbly-button{
   display: inline-block;
-  font-size: 1em;
-  padding: 1em 2em;
+  font-size: 0.6em;
+  padding: 0.6em 1.8em;
   margin-top: 30px;
   margin-bottom: 60px;
   -webkit-appearance: none;
@@ -572,7 +572,7 @@ body::-webkit-scrollbar-thumb {
     /* Mobile styles */
     font-size: 0.7em;
     padding: 0.7em 1.2em;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 30px;
   }
  
