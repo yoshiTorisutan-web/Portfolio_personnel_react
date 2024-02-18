@@ -114,7 +114,7 @@ const About = () => {
           Lorsque je travaille sur un projet qui me <b>passionne</b>, je ne
           compte pas mes heures et je donne tout pour y arriver. <br></br>
           <br></br>
-          Malgré mon défaut d’être « <b>discret</b> », cela me permet d’observer
+          Malgré mon caractère de « <b>discret</b> », cela me permet d’observer
           le monde qui nous entoure et de me concentrer sur des éléments qui
           m’entourent me permettant d’engranger de nouvelles idées pour mes
           futures créations.

@@ -2,9 +2,10 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { tristan, galaxy } from "../assets";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import "../index.css";
-import "./animationHero.js";
 
 const Hero = () => {
   return (
@@ -46,9 +47,19 @@ const Hero = () => {
               </span>
             </h1>
             <a href="https://tristanbossard-besoin-projet.softr.app">
-              <button className="bubbly-button text-timberWolf font-medium mb-4 lg:text-xl">
-                Besoin d'aide pour un projet ?
-              </button>
+              <div className="btn-effect">
+                <button className={`button-effect text-timberWolf font-medium mb-4 lg:text-xl`}>
+                  <span className="text">Un projet ?</span>
+                  <div className="icon-container">
+                    <div className="icon icon--left">
+                      <FontAwesomeIcon icon={faArrowRight} />
+                    </div>
+                    <div className="icon icon--right">
+                      <FontAwesomeIcon icon={faArrowRight} />
+                    </div>
+                  </div>
+                </button>
+              </div>
             </a>
           </div>
           <div

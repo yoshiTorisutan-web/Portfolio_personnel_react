@@ -222,11 +222,19 @@
 
 /*Personnal color*/
 .cardOne {
-  background-image: linear-gradient( 109.6deg,  rgba(61,131,97,1) 11.2%, rgba(28,103,88,1) 91.1% );
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(61, 131, 97, 1) 11.2%,
+    rgba(28, 103, 88, 1) 91.1%
+  );
 }
 
 .cardTwo {
-  background-image: linear-gradient( 109.6deg, rgba(28,103,88,1) 11.2%,  rgba(61,131,97,1) 91.1% );
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(28, 103, 88, 1) 11.2%,
+    rgba(61, 131, 97, 1) 91.1%
+  );
 }
 
 .card-hobbies {
@@ -488,7 +496,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*Animation Logo et profil*/
-@keyframes appearance { 
+@keyframes appearance {
   0% {
     opacity: 0;
   }
@@ -503,118 +511,128 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Button Projet */
-.bubbly-button{
-  display: inline-block;
-  font-size: 0.6em;
-  padding: 0.6em 1.8em;
+.btn-effect {
+  width: 100%;
+  height: 100%;
   margin-top: 30px;
   margin-bottom: 60px;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color:rgba(61,131,97,1);
-  color: #fff;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
+
+  &:nth-child(1) {
+    --btn-bg: rgba(61, 131, 97, 1);
+    --bg: rgba(61, 131, 97, 1);
+  }
+  &:nth-child(2) {
+    --btn-bg: rgba(61, 131, 97, 1);
+    --bg: rgba(61, 131, 97, 1);
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+}
+
+.button-effect {
+  --width: 300px;
+  --height: 60px;
+  border: 0;
   position: relative;
-  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(28,103,88,0.5);
-  
-  &:focus {
-    outline: 0;
+  min-width: var(--width);
+  min-height: var(--height);
+  border-radius: var(--height);
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .text,
+  .icon-container {
+    position: relative;
+    z-index: 2;
   }
-  
-  &:before, &:after{
+
+  .icon-container {
+    --icon-size: 25px;
+    position: relative;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    transition: transform 500ms ease;
+
+    .icon {
+      position: absolute;
+      left: 20px;
+      top: 0;
+      width: var(--icon-size);
+      height: var(--icon-size);
+      transition: transform 500ms ease, opacity 250ms ease;
+
+      &--left {
+        transform: translateX(-200%);
+        opacity: 0;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+        fill: #fff;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
     position: absolute;
-    content: '';
-    display: block;
-    width: 140%;
+    left: 0;
+    top: 0;
+    width: 100%;
     height: 100%;
-    left: -20%;
-    z-index: -1000;
-    transition: all ease-in-out 0.5s;
-    background-repeat: no-repeat;
-  }
-  
-  &:before{
-    display: none;
-    top: -75%;
-    background-image:  
-      radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%),
-    radial-gradient(circle,  transparent 20%, rgba(61,131,97,1) 20%, transparent 30%),
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%), 
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%),
-    radial-gradient(circle,  transparent 10%, rgba(61,131,97,1) 15%, transparent 20%),
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%),
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%),
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%),
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%);
-  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
-  background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;
-  }
-  
-  &:after{
-    display: none;
-    bottom: -75%;
-    background-image:  
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%), 
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%),
-    radial-gradient(circle,  transparent 10%, rgba(61,131,97,1) 15%, transparent 20%),
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%),
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%),
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%),
-    radial-gradient(circle, rgba(61,131,97,1) 20%, transparent 20%);
-  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
-  background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    background: var(--btn-bg);
+    border-radius: var(--height);
+    z-index: 1;
+    transition: transform 500ms ease;
   }
 
-  @media (max-width: 768px) {
-    /* Mobile styles */
-    font-size: 0.7em;
-    padding: 0.7em 1.2em;
-    margin-top: 5px;
-    margin-bottom: 30px;
-  }
- 
-  &:active{
-    transform: scale(0.9);
-    background-color: darken(rgba(61,131,97,1), 5%);
-    box-shadow: 0 2px 25px rgba(28,103,88,0.5);
-  }
-  
-  &.animate{
-    &:before{
-      display: block;
-      animation: topBubbles ease-in-out 0.75s forwards;
+  &:hover {
+    &::after {
+      transform: translateX(70%);
     }
-    &:after{
-      display: block;
-      animation: bottomBubbles ease-in-out 0.75s forwards;
+
+    .icon-container {
+      transform: translateX(125%);
+      .icon {
+        &--left {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        &--right {
+          transform: translateX(200%);
+          opacity: 0;
+        }
+      }
     }
   }
-}
 
+  @media screen and (max-width: 768px) {
+    --width: 200px; /* Diminuer la largeur du bouton en version mobile */
+    --height: 40px; /* Diminuer la hauteur du bouton en version mobile */
 
-@keyframes topBubbles {
-  0%{
-    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
-  }
-    50% {
-      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;}
- 100% {
-    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-  background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
-  }
-}
+    .text {
+      font-size: 14px; /* Diminuer la taille de la police du texte en version mobile */
+    }
 
-@keyframes bottomBubbles {
-  0%{
-    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
-  }
-  50% {
-    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;}
- 100% {
-    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
-  background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    .icon-container {
+      --icon-size: 20px; /* Diminuer la taille de l'icône en version mobile */
+    }
+
+    &:hover {
+      &::after {
+        transform: none; /* Désactiver la transformation sur hover pour les appareils mobiles */
+      }
+    }
   }
 }
