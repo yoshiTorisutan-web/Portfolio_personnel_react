@@ -21,6 +21,7 @@ const Tech = () => {
               <>
                 <div className="skill font-beckman">
                   <img src={technology.icon} alt="Skill logo image" />
+                  <div className="text-overlay">{technology.temps}</div>
                   <p>{technology.name}</p>
                 </div>
               </>

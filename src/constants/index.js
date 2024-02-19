@@ -15,8 +15,6 @@ import {
   nodejs,
   git,
   figma,
-  docker,
-  graphql,
   web,
   mobile,
   graphisme,
@@ -28,8 +26,6 @@ import {
   flutter,
   mysql,
   php,
-  python,
-  symfony,
   pasquier,
   autodidacte,
   espl,
@@ -91,75 +87,73 @@ const hobbies = [
 const technologies = [
   {
     name: "HTML 5",
+    temps: "3 ans",
     icon: html,
   },
   {
     name: "CSS 3",
+    temps: "3 ans",
     icon: css,
   },
   {
     name: "JavaScript",
+    temps: "3 ans",
     icon: javascript,
   },
   {
     name: "React JS",
+    temps: "1 an",
     icon: reactjs,
   },
   {
     name: "Tailwind CSS",
+    temps: "1 an",
     icon: tailwind,
   },
   {
     name: "Node JS",
+    temps: "1 an",
     icon: nodejs,
   },
   {
-    name: "graphql",
-    icon: graphql,
-  },
-  {
     name: "git",
+    temps: "3 ans",
     icon: git,
   },
   {
     name: "figma",
+    temps: "3 ans",
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
-  },
-  {
     name: "sass",
+    temps: "1 an",
     icon: sass,
   },
   {
     name: "vue",
+    temps: "1 an",
     icon: vue,
   },
   {
     name: "bootstrap",
+    temps: "2 ans",
     icon: bootstrap,
   },
   {
     name: "flutter",
+    temps: "1 an",
     icon: flutter,
   },
   {
     name: "mysql",
+    temps: "3 ans",
     icon: mysql,
   },
   {
     name: "php",
+    temps: "3 ans",
     icon: php,
-  },
-  {
-    name: "python",
-    icon: python,
-  },
-  {
-    name: "symfony",
-    icon: symfony,
   },
 ];
 

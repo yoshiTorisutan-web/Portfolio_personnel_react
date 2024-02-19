@@ -371,9 +371,14 @@ body::-webkit-scrollbar-thumb {
 
 .skill-icons-gird {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-top: 5vh;
-  gap: 3rem;
+  gap: 2rem;
+}
+
+.skill {
+  position: relative;
+  display: inline-block;
 }
 
 .skill img {
@@ -387,15 +392,52 @@ body::-webkit-scrollbar-thumb {
   box-shadow: rgba(255, 255, 255, 0.864) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
   transition-duration: 0.4s;
-  cursor: pointer;
 }
 
 .skill img:hover {
   box-shadow: none;
   transform: scale(1.15);
   transition-duration: 0.4s;
+  transition-property: background-image;
 }
 
+.skill img:hover {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(61, 131, 97, 1) 11.2%,
+    rgba(28, 103, 88, 1) 91.1%
+  );
+}
+
+.skill:hover img {
+  opacity: 0; /* Rend l'image complètement transparente au survol */
+}
+
+.skill .text-overlay {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(61, 131, 97, 1) 11.2%,
+    rgba(28, 103, 88, 1) 91.1%
+  );
+  border-radius: 2rem; /* Reprend le même arrondi que l'image */
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.skill:hover .text-overlay {
+  opacity: 1;
+  width: 7rem; /* Le texte prend la largeur de l'image */
+  height: 7rem; /* Le texte prend la hauteur de l'image */
+  text-align: center; /* Centre le texte horizontalement */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .skill-icons-gird p {
   font-weight: 300;
   font-size: 1rem;
@@ -406,18 +448,68 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 950px) {
   .skill-icons-gird {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-top: 5vh;
-    gap: 3rem;
+    gap: 2rem;
+  }
+  .skill .text-overlay {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(61, 131, 97, 1) 11.2%,
+      rgba(28, 103, 88, 1) 91.1%
+    );
+    border-radius: 2rem; /* Reprend le même arrondi que l'image */
+    color: white;
+    font-size: 15px;
+    opacity: 0;
+  }
+  
+  .skill:hover .text-overlay {
+    opacity: 1;
+    width: 7rem; /* Le texte prend la largeur de l'image */
+    height: 7rem; /* Le texte prend la hauteur de l'image */
+    text-align: center; /* Centre le texte horizontalement */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .skill-icons-gird {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin-top: 5vh;
     gap: 1rem;
+  }
+  .skill .text-overlay {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(61, 131, 97, 1) 11.2%,
+      rgba(28, 103, 88, 1) 91.1%
+    );
+    border-radius: 2rem; /* Reprend le même arrondi que l'image */
+    color: white;
+    font-size: 15px;
+    opacity: 0;
+  }
+  
+  .skill:hover .text-overlay {
+    opacity: 1;
+    width: 5rem; /* Le texte prend la largeur de l'image */
+    height: 5rem; /* Le texte prend la hauteur de l'image */
+    text-align: center; /* Centre le texte horizontalement */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -428,6 +520,31 @@ body::-webkit-scrollbar-thumb {
     margin-top: 5vh;
     gap: 1rem;
   }
+  .skill .text-overlay {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(61, 131, 97, 1) 11.2%,
+      rgba(28, 103, 88, 1) 91.1%
+    );
+    border-radius: 2rem; /* Reprend le même arrondi que l'image */
+    color: white;
+    font-size: 15px;
+    opacity: 0;
+  }
+  
+  .skill:hover .text-overlay {
+    opacity: 1;
+    width: 5rem; /* Le texte prend la largeur de l'image */
+    height: 5rem; /* Le texte prend la hauteur de l'image */
+    text-align: center; /* Centre le texte horizontalement */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 475px) {
@@ -435,6 +552,31 @@ body::-webkit-scrollbar-thumb {
     height: 5rem;
     width: 5rem;
     padding: 0.75rem;
+  }
+  .skill .text-overlay {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(61, 131, 97, 1) 11.2%,
+      rgba(28, 103, 88, 1) 91.1%
+    );
+    border-radius: 2rem; /* Reprend le même arrondi que l'image */
+    color: white;
+    font-size: 15px;
+    opacity: 0;
+  }
+  
+  .skill:hover .text-overlay {
+    opacity: 1;
+    width: 5rem; /* Le texte prend la largeur de l'image */
+    height: 5rem; /* Le texte prend la hauteur de l'image */
+    text-align: center; /* Centre le texte horizontalement */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -635,4 +777,19 @@ body::-webkit-scrollbar-thumb {
       }
     }
   }
+}
+
+/* Shadow Card */
+.shadow-hobbies {
+  --tw-shadow: 0px 10px 30px -5px #1f1f1f; /* Valeurs ajustées */
+  --tw-shadow-colored: 0px 10px 30px -5px var(--tw-shadow-color); /* Valeurs ajustées */
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-service {
+  --tw-shadow: 0px 10px 30px -5px #1f1f1f; /* Valeurs ajustées */
+  --tw-shadow-colored: 0px 10px 30px -5px var(--tw-shadow-color); /* Valeurs ajustées */
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }

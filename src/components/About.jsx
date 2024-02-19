@@ -23,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => {
   return (
     <motion.div
       variants={isMobile ? {} : fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-card"
+      className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-service"
     >
       <div
         options={{
@@ -47,7 +47,7 @@ const HobbiesCard = ({ index, title, icon }) => {
   return (
     <motion.div
       variants={isMobile ? {} : fadeIn("left", "spring", 0.5 * index, 0.75)}
-      className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-card"
+      className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-hobbies"
     >
       <div
         options={{
