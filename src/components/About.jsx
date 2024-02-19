@@ -147,41 +147,58 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>A propos</h2>
       </motion.div>
 
-      <motion.p
-        variants={isMobile ? {} : fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-jet text-[18px] max-w-3xl leading-[30px]"
-      >
-        Étudiant en reconversion dans le web, j'ai pu développer mes compétences
-        en alternance afin d'obtenir mon{" "}
-        <b>Titre Professionnel Développeur Web et Web Mobile</b> (TP DWWM) au
-        GRETA d'Angers.
-        <br></br>
-        <br></br>
-        Par la suite, j'ai pu poursuivre vers un Bachelor Développeur Web à
-        MyDigitalSchool Angers afin d'obtenir mon{" "}
-        <b>Titre Professionnel Concepteur Développeur d'Applications</b> (TP
-        CDA).<br></br>
-        <br></br>
-        De plus, je souhaite obtenir à l'avenir une double compétence
-        <b> développement web</b> et <b>webdesign</b> afin d'obtenir un panel de
-        compétences sur un projet web, et ainsi aider les entreprises à
-        développer et à améliorer leur site internet.
-        <br></br>
-        <br></br>
-        Mon objectif final ? Perfectionner mes compétences en développement web
-        et webdesign et acquérir une casquette de <b>
-          chef de projet digital
-        </b>{" "}
-        à la fin de mes études.
-        <br></br>
-        <br></br>
-        N’hésitez pas à parcourir mon travail. Bien entendu, je n'ai pas tout
-        mis, alors si vous voulez qu'on papote et qu'on apprenne à se connaître.
-        <br></br>
-        <br></br>
-        Ou alors, si vous souhaitez collaborer ou simplement me dire bonjour,
-        <b> contactez-moi</b> !<br></br>
-      </motion.p>
+      <div className="containerAbout flex flex-col md:flex-row items-center">
+        <motion.p
+          variants={isMobile ? {} : fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-jet text-[18px] max-w-3xl leading-[30px]"
+        >
+          Étudiant en reconversion dans le web, j'ai pu développer mes
+          compétences en alternance afin d'obtenir mon{" "}
+          <b>Titre Professionnel Développeur Web et Web Mobile</b> (TP DWWM) au
+          GRETA d'Angers.
+          <br></br>
+          <br></br>
+          Par la suite, j'ai pu poursuivre vers un Bachelor Développeur Web à
+          MyDigitalSchool Angers afin d'obtenir mon{" "}
+          <b>Titre Professionnel Concepteur Développeur d'Applications</b> (TP
+          CDA).<br></br>
+          <br></br>
+          De plus, je souhaite obtenir à l'avenir une double compétence
+          <b> développement web</b> et <b>webdesign</b> afin d'obtenir un panel
+          de compétences sur un projet web, et ainsi aider les entreprises à
+          développer et à améliorer leur site internet.
+          <br></br>
+          <br></br>
+          Mon objectif final ? Perfectionner mes compétences en développement
+          web et webdesign et acquérir une casquette de{" "}
+          <b>chef de projet digital</b> à la fin de mes études.
+          <br></br>
+          <br></br>
+          N’hésitez pas à parcourir mon travail. Bien entendu, je n'ai pas tout
+          mis, alors si vous voulez qu'on papote et qu'on apprenne à se
+          connaître.
+          <br></br>
+          <br></br>
+          Ou alors, si vous souhaitez collaborer ou simplement me dire bonjour,
+          <b> contactez-moi</b> !<br></br>
+        </motion.p>
+
+        {!isMobile && (
+          <motion.div
+            variants={fadeIn("", "", 0.1, 1)}
+            className="videoWrapper mt-4 md:mt-0"
+          >
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/watch?v=bjsrVsWmREo"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </motion.div>
+        )}
+      </div>
 
       <motion.div
         className="mt-[4rem]"

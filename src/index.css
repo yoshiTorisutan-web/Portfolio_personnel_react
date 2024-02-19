@@ -599,6 +599,12 @@ body::-webkit-scrollbar-thumb {
   width: 30rem;
 }
 
+.videoWrapper {
+  height: 30rem;
+  width: 30rem;
+  margin-left: 4rem;
+}
+
 /*Cursor download */
 .download-link {
   cursor: pointer;
