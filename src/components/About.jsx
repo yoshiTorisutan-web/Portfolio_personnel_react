@@ -16,6 +16,8 @@ import { astronaut } from "../assets";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { useMediaQuery } from "@react-hook/media-query";
 
+import YouTube from "react-youtube";
+
 import "../index.css";
 
 const ServiceCard = ({ index, title, icon }) => {
@@ -188,14 +190,7 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="videoWrapper mt-4 md:mt-0"
           >
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/watch?v=bjsrVsWmREo"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <YouTube videoId="bjsrVsWmREo" opts={{ width: '450px', height: '250px' }}/>
           </motion.div>
         )}
       </div>
