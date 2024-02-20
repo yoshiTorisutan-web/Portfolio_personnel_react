@@ -86,12 +86,12 @@ const hobbies = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "HTML",
     temps: "3 ans",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS",
     temps: "3 ans",
     icon: css,
   },
@@ -101,17 +101,17 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "React JS",
+    name: "React",
     temps: "1 an",
     icon: reactjs,
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     temps: "1 an",
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "Node",
     temps: "1 an",
     icon: nodejs,
   },

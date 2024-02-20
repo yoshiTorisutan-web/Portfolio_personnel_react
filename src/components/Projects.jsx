@@ -45,10 +45,10 @@ const ProjectCard = ({
       />
 
       {active !== id ? (
-        <div className="flex items-center justify-center">
+        <div className="flex mt-4 items-center justify-center">
           <h3
             className="font-extrabold font-beckman uppercase w-[200px] h-[30px] 
-            whitespace-nowrap sm:text-[27px] text-[18px] text-timberWolf 
+            whitespace-nowrap sm:text-[27px] text-[18px] text-color 
             tracking-[1px] absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] 
             lg:origin-[0,0] leading-none text-center"
           >
