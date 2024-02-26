@@ -237,6 +237,29 @@
   );
 }
 
+/* Ajoutez ces styles dans votre fichier CSS */
+@media only screen and (max-width: 767px) {
+  .mobile-card {
+    width: 40%; /* Définissez la largeur de la carte pour les appareils mobiles */
+    /* Ajoutez d'autres styles spécifiques aux appareils mobiles */
+  }
+
+  .mobile-card-content {
+    padding: 30px; /* Ajustez les rembourrages pour réduire l'espace */
+    min-height: 100%; /* Réduisez la hauteur minimale si nécessaire */
+  }
+
+  .mobile-card-content img {
+    width: 50px; /* Réduisez la taille de l'image */
+    height: 50px;
+  }
+
+  .mobile-card-content h3 {
+    font-size: 13px; /* Réduisez la taille de la police */
+    margin-top: 30px; /* Ajustez les marges pour un meilleur ajustement */
+  }
+}
+
 .card-hobbies {
   background-color: black;
 }
@@ -467,7 +490,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 15px;
     opacity: 0;
   }
-  
+
   .skill:hover .text-overlay {
     opacity: 1;
     width: 7rem; /* Le texte prend la largeur de l'image */
@@ -506,7 +529,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 15px;
     opacity: 0;
   }
-  
+
   .skill:hover .text-overlay {
     opacity: 1;
     width: 5rem; /* Le texte prend la largeur de l'image */
@@ -545,7 +568,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 10px;
     opacity: 0;
   }
-  
+
   .skill:hover .text-overlay {
     opacity: 1;
     width: 3rem; /* Le texte prend la largeur de l'image */
@@ -584,7 +607,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 10px;
     opacity: 0;
   }
-  
+
   .skill:hover .text-overlay {
     opacity: 1;
     width: 3rem; /* Le texte prend la largeur de l'image */

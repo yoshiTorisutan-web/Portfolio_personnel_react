@@ -24,8 +24,10 @@ const ServiceCard = ({ index, title, icon }) => {
   const isMobile = useMediaQuery("(max-width: 767px)");
   return (
     <motion.div
-      variants={isMobile ? {} : fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-service"
+      variants={isMobile ? {} : fadeIn("left", "spring", 0.5 * index, 0.75)}
+      className={`xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-hobbies ${
+        isMobile ? "mobile-card" : "" // Ajoutez une classe spécifique pour les appareils mobiles
+      }`}
     >
       <div
         options={{
@@ -33,7 +35,9 @@ const ServiceCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450,
         }}
-        className="cardOne rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className={`cardOne rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col ${
+          isMobile ? "mobile-card-content" : "" // Ajoutez une classe spécifique pour le contenu des cartes sur les appareils mobiles
+        }`}
       >
         <img src={icon} alt={title} className="w-16 h-16 object-contain" />
         <h3 className="text-white-100 text-[18px] font-bold text-center">
@@ -46,10 +50,13 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const HobbiesCard = ({ index, title, icon }) => {
   const isMobile = useMediaQuery("(max-width: 767px)");
+
   return (
     <motion.div
       variants={isMobile ? {} : fadeIn("left", "spring", 0.5 * index, 0.75)}
-      className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-hobbies"
+      className={`xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-hobbies ${
+        isMobile ? "mobile-card" : "" // Ajoutez une classe spécifique pour les appareils mobiles
+      }`}
     >
       <div
         options={{
@@ -57,7 +64,9 @@ const HobbiesCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450,
         }}
-        className="cardTwo rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className={`cardTwo rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col ${
+          isMobile ? "mobile-card-content" : "" // Ajoutez une classe spécifique pour le contenu des cartes sur les appareils mobiles
+        }`}
       >
         <img src={icon} alt={title} className="w-16 h-16 object-contain" />
         <h3 className="text-white-100 text-[18px] font-bold text-center">
@@ -69,7 +78,6 @@ const HobbiesCard = ({ index, title, icon }) => {
 };
 
 const SocialLinks = () => {
-  const isMobile = useMediaQuery("(max-width: 767px)");
   return (
     <div className="flex items-center">
       <p>
@@ -190,7 +198,10 @@ const About = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="videoWrapper mt-4 md:mt-0"
           >
-            <YouTube videoId="bjsrVsWmREo" opts={{ width: '450px', height: '250px' }}/>
+            <YouTube
+              videoId="bjsrVsWmREo"
+              opts={{ width: "450px", height: "250px" }}
+            />
           </motion.div>
         )}
       </div>
