@@ -241,7 +241,9 @@
 @media only screen and (max-width: 767px) {
   .mobile-card {
     width: 40%; /* Définissez la largeur de la carte pour les appareils mobiles */
-    /* Ajoutez d'autres styles spécifiques aux appareils mobiles */
+    justify-content: center; /* Alignez les cartes horizontalement */
+    align-items: center; /* Alignez les cartes verticalement */
+    margin: 0 auto; /* Centrez les cartes horizontalement */
   }
 
   .mobile-card-content {
