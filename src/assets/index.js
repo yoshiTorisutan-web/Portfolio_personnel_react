@@ -6,6 +6,7 @@ import logoTransparent from './logo/logo_transparent.png';
 
 import tristan from './personal/tristan_green.png';
 import astronaut from './personal/astronaut.png';
+import astronaut_fun from './personal/astronaut_fun.png';
 
 import dev from './icons/programmation.png';
 import integrateur from './icons/hebergement-web.png';
@@ -109,5 +110,6 @@ export {
   espl,
   autodidacte,
   cv,
-  rocket
+  rocket,
+  astronaut_fun
 };

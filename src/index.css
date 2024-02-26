@@ -640,6 +640,20 @@ body::-webkit-scrollbar-thumb {
   width: 30rem;
 }
 
+.imageAboutFun {
+  /* Ajoutez les styles de positionnement pour votre image ici */
+  /* Par exemple, pour l'aligner à droite, vous pouvez utiliser : */
+  height: 13rem;
+  width: 15rem;
+  margin-top: -100px;
+}
+
+.videoAndImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .videoWrapper {
   height: 30rem;
   width: 30rem;

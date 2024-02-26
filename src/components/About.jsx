@@ -11,7 +11,7 @@ import { services } from "../constants";
 import { hobbies } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
-import { astronaut } from "../assets";
+import { astronaut, astronaut_fun } from "../assets";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { useMediaQuery } from "@react-hook/media-query";
@@ -194,15 +194,23 @@ const About = () => {
         </motion.p>
 
         {!isMobile && (
-          <motion.div
-            variants={fadeIn("", "", 0.1, 1)}
-            className="videoWrapper mt-4 md:mt-0"
-          >
-            <YouTube
-              videoId="bjsrVsWmREo"
-              opts={{ width: "450px", height: "250px" }}
+          <div className="videoAndImageWrapper">
+            <motion.div
+              variants={fadeIn("", "", 0.1, 1)}
+              className="videoWrapper"
+            >
+              <YouTube
+                videoId="bjsrVsWmREo"
+                opts={{ width: "450px", height: "250px" }}
+              />
+            </motion.div>
+            <motion.img
+              variants={fadeIn("", "", 0.1, 1)}
+              src={astronaut_fun}
+              alt="Astronaute"
+              className="imageAboutFun"
             />
-          </motion.div>
+          </div>
         )}
       </div>
 
