@@ -13,7 +13,7 @@ function Footer() {
       </div>
       <div className="footer__right text-right mt-4 md:mt-0">
         <p className="footer__text text-white text-[10px] md:text-[16px] font-poppins">
-          Copyright © 2023 - Créé et développé par <b>Tristan Bossard</b>
+          Copyright © 2024 - Créé et développé par <b>Tristan Bossard</b>
         </p>
       </div>
     </footer>
