@@ -9,7 +9,7 @@ import astronaut from './personal/astronaut.png';
 import astronaut_fun from './personal/astronaut_fun.png';
 
 import dev from './icons/programmation.png';
-import integrateur from './icons/hebergement-web.png';
+import chief_project from './icons/project_management.png';
 import webdesigner from './icons/webdesigner.png';
 import art from './icons/arts.png';
 
@@ -68,7 +68,7 @@ export {
   tristan,
   astronaut,
   dev,
-  integrateur,
+  chief_project,
   webdesigner,
   art,
   racing,

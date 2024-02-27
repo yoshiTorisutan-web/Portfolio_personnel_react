@@ -1,6 +1,6 @@
 import {
   dev,
-  integrateur,
+  chief_project,
   webdesigner,
   art,
   racing,
@@ -52,8 +52,8 @@ const services = [
     icon: dev,
   },
   {
-    title: "Intégrateur web",
-    icon: integrateur,
+    title: "Gestion de projet",
+    icon: chief_project,
   },
   {
     title: "Webdesigner",
