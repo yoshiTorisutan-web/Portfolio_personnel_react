@@ -110,12 +110,10 @@ const About = () => {
           variants={isMobile ? {} : fadeIn("", "", 0.1, 1)}
           className="textAbout mt-4 text-jet text-[18px] max-w-3xl leading-[30px] md:mr-8"
         >
-          Je suis <b>développeur web</b> basé dans la ville de Cholet, terre de
-          basket.
+          Moi c'est <b><em>Tristan</em></b>, <b>développeur web</b> de formation.
           <br></br>
           <br></br>
-          J'ai une passion pour la <b>création graphique</b> et{" "}
-          <b>l'informatique</b>.<br></br>
+          Mes passions ? La <b>création graphique</b>, <b>l'informatique</b> et plus encore que j'ai détaillé par la suite.<br></br>
           <br></br>
           De nature <b>curieux</b> et <b>dynamique</b>, j’aime créer et
           m’améliorer chaque jour en développant de nouvelles compétences dans
