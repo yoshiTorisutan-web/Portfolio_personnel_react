@@ -9,6 +9,7 @@ import { send, sendHover } from "../assets";
 import { fadeIn } from "../utils/motion";
 import { rocket } from "../assets";
 import { useMediaQuery } from "@react-hook/media-query";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import "../index.css";
 
@@ -17,39 +18,48 @@ export const Contact = (index) => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
+  const [isVerified, setIsVerified] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true);
 
-    emailjs
-      .sendForm(
-        "service_0tcfms9",
-        "template_we29617",
-        form.current,
-        "tQ30iSG0cOmJqiA-V"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          // Afficher le message d'alerte personnalisé de succès
-          setMessage(
-            <div className="bg-green-500 text-white p-4 rounded">
-              Je vous remercie. Je reviendrai vers vous dès que possible.
-            </div>
-          );
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          // Afficher le message d'alerte personnalisé d'erreur
-          setMessage(
-            <div className="bg-red-500 text-white p-4 rounded">
-              Un problème sest produit. Veuillez réessayer.
-            </div>
-          );
-        }
+    // Vérifier si le reCAPTCHA est résolu
+    if (isVerified) {
+      setLoading(true);
+      emailjs
+        .sendForm(
+          "service_0tcfms9",
+          "template_we29617",
+          form.current,
+          "tQ30iSG0cOmJqiA-V"
+        )
+        .then(
+          () => {
+            setLoading(false);
+            setMessage(
+              <div className="bg-green-500 text-white p-4 rounded">
+                Je vous remercie. Je reviendrai vers vous dès que possible.
+              </div>
+            );
+          },
+          (error) => {
+            setLoading(false);
+            console.log(error);
+            setMessage(
+              <div className="bg-red-500 text-white p-4 rounded">
+                Un problème s’est produit. Veuillez réessayer.
+              </div>
+            );
+          }
+        );
+    } else {
+      // Afficher un message d'erreur si le reCAPTCHA n'est pas résolu
+      setMessage(
+        <div className="bg-red-500 text-white p-4 rounded">
+          Veuillez cocher la case ’Je ne suis pas un robot’ avant d’envoyer.
+        </div>
       );
+    }
   };
 
   return (
@@ -107,6 +117,11 @@ export const Contact = (index) => {
               border-none font-medium resize-none"
             />
           </label>
+
+          <ReCAPTCHA
+            sitekey="6LfZ2IMpAAAAAIascZ1LFsWeOkbASCsq4pbJ0SAj"
+            onChange={() => setIsVerified(true)}
+          />
 
           <button
             type="submit"
