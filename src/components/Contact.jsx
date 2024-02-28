@@ -18,48 +18,40 @@ export const Contact = (index) => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
-  const [isVerified, setIsVerified] = useState(false);
+  const [capVal, setCapVal] = useState(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    // Vérifier si le reCAPTCHA est résolu
-    if (isVerified) {
-      setLoading(true);
-      emailjs
-        .sendForm(
-          "service_0tcfms9",
-          "template_we29617",
-          form.current,
-          "tQ30iSG0cOmJqiA-V"
-        )
-        .then(
-          () => {
-            setLoading(false);
-            setMessage(
-              <div className="bg-green-500 text-white p-4 rounded">
-                Je vous remercie. Je reviendrai vers vous dès que possible.
-              </div>
-            );
-          },
-          (error) => {
-            setLoading(false);
-            console.log(error);
-            setMessage(
-              <div className="bg-red-500 text-white p-4 rounded">
-                Un problème s’est produit. Veuillez réessayer.
-              </div>
-            );
-          }
-        );
-    } else {
-      // Afficher un message d'erreur si le reCAPTCHA n'est pas résolu
-      setMessage(
-        <div className="bg-red-500 text-white p-4 rounded">
-          Veuillez cocher la case ’Je ne suis pas un robot’ avant d’envoyer.
-        </div>
+    emailjs
+      .sendForm(
+        "service_0tcfms9",
+        "template_we29617",
+        form.current,
+        "tQ30iSG0cOmJqiA-V"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          // Afficher le message d'alerte personnalisé de succès
+          setMessage(
+            <div className="bg-green-500 text-white p-4 rounded">
+              Je vous remercie. Je reviendrai vers vous dès que possible.
+            </div>
+          );
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          // Afficher le message d'alerte personnalisé d'erreur
+          setMessage(
+            <div className="bg-red-500 text-white p-4 rounded">
+              Un problème sest produit. Veuillez réessayer.
+            </div>
+          );
+        }
       );
-    }
   };
 
   return (
@@ -119,8 +111,8 @@ export const Contact = (index) => {
           </label>
 
           <ReCAPTCHA
-            sitekey="6LfZ2IMpAAAAAIascZ1LFsWeOkbASCsq4pbJ0SAj"
-            onChange={() => setIsVerified(true)}
+            sitekey="6Leh44MpAAAAACstTUXh1KielvQIhBMSRcp89s9S"
+            onChange={(val) => setCapVal(val)}
           />
 
           <button
@@ -132,6 +124,7 @@ export const Contact = (index) => {
     w-[150px] h-[50px] rounded-[10px] bg-color-input
     hover:bg-black hover:text-white
     transition duration-[0.2s] ease-in-out"
+            disabled={!capVal}
             onMouseOver={() => {
               document
                 .querySelector(".contact-btn")
