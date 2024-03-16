@@ -382,6 +382,10 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
 }
 
+.scroll-to-top-button:hover {
+  background-color: #415d43;
+}
+
 /*Technologies*/
 
 .bg-skills {

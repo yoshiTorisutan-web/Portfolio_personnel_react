@@ -113,7 +113,7 @@ const About = () => {
           Moi c'est <b><em>Tristan</em></b>, <b>développeur web</b> de formation.
           <br></br>
           <br></br>
-          Mes passions ? La <b>création graphique</b>, <b>l'informatique</b> et plus encore que j'ai détaillé par la suite.<br></br>
+          <em>Mes passions ?</em> La <b>création graphique</b>, <b>l'informatique</b> et plus encore que j'ai détaillé par la suite.<br></br>
           <br></br>
           De nature <b>curieux</b> et <b>dynamique</b>, j’aime créer et
           m’améliorer chaque jour en développant de nouvelles compétences dans
@@ -177,7 +177,7 @@ const About = () => {
           développer et à améliorer leur site internet.
           <br></br>
           <br></br>
-          Mon objectif final ? Perfectionner mes compétences en développement
+          <em>Mon objectif final ?</em> Perfectionner mes compétences en développement
           web et webdesign et acquérir une casquette de{" "}
           <b>chef de projet digital</b> à la fin de mes études.
           <br></br>
