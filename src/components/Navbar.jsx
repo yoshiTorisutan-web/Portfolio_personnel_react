@@ -51,6 +51,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <a href="https://tristanbossard-besoin-projet.softr.app">
+          <div className="buttonNav greenButton center">Un projet ?</div>
+        </a>
 
         {/* mobile */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -86,6 +89,20 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
+              <div className="footerLogo">
+                <div>
+                  <img
+                    src={logo} // votre logo ici
+                    alt="logo"
+                    className="sm:w-[100px] sm:h-[100px] w-[50px] h-[50px] object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] font-poppins font-extrabold uppercase text-black">
+                    Tristan Bossard
+                  </p>
+                </div>
+              </div>
             </div>
           ) : (
             <img
