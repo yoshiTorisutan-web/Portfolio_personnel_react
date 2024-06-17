@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
-import { navLinks } from "../constants";
-import { close, menu, logo } from "../assets";
+import { navLinks, curriculumvitaeLinks, projectsLinks } from "../constants";
+import { close, menu, logo, cv } from "../assets";
 
 import "../index.css";
 
@@ -52,7 +52,10 @@ const Navbar = () => {
           ))}
         </ul>
         <a href="https://tristanbossard-besoin-projet.softr.app">
-          <div className="buttonNav greenButton center">Un projet ?</div>
+          <div className="buttonNav greenButton center text">
+            <span className="text">Un projet ?</span>
+            <span className="icon">💡</span>
+          </div>
         </a>
 
         {/* mobile */}
@@ -79,13 +82,45 @@ const Navbar = () => {
                     key={nav.id}
                     className={`${
                       active === nav.title ? "textColor-current" : "text-black"
-                    } text-[14px] font-bold font-arenq uppercase tracking-[1px] cursor-pointer`}
+                    } text-[14px] font-medium font-mova uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
                     }}
                   >
                     <a href={`#${nav.id}`}>{nav.title}</a>
+                  </li>
+                ))}
+              </ul>
+              <ul className="list-none flex flex-col -gap-[1rem] items-start justify-end listeMobile">
+                {curriculumvitaeLinks.map((nav) => (
+                  <li
+                    id={nav.id}
+                    key={nav.id}
+                    className={`${
+                      active === nav.title ? "textColor-current" : "text-black"
+                    } text-[40px] font-medium font-mova uppercase tracking-[1px] cursor-pointer`}
+                    onClick={() => {
+                      setToggle(!toggle);
+                    }}
+                  >
+                    <a href={cv} download>{nav.title}</a>
+                  </li>
+                ))}
+              </ul>
+              <ul className="list-none flex flex-col -gap-[1rem] items-start justify-end listeMobile">
+                {projectsLinks.map((nav) => (
+                  <li
+                    id={nav.id}
+                    key={nav.id}
+                    className={`${
+                      active === nav.title ? "textColor-current" : "text-black"
+                    } text-[40px] font-medium font-mova uppercase tracking-[1px] cursor-pointer`}
+                    onClick={() => {
+                      setToggle(!toggle);
+                    }}
+                  >
+                    <a href="https://tristanbossard-besoin-projet.softr.app">{nav.title}</a>
                   </li>
                 ))}
               </ul>

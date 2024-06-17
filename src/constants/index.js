@@ -46,6 +46,20 @@ export const navLinks = [
   },
 ];
 
+export const curriculumvitaeLinks = [
+  {
+    id: "curriculumvitae",
+    title: "CV",
+  }
+];
+
+export const projectsLinks = [
+  {
+    id: "projectidea",
+    title: "Idée Projet",
+  }
+];
+
 const services = [
   {
     title: "Développeur web",
