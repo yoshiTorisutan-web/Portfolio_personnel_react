@@ -52,9 +52,8 @@ const Navbar = () => {
           ))}
         </ul>
         <a href="https://tristanbossard-besoin-projet.softr.app">
-          <div className="buttonNav greenButton center text">
+          <div className="buttonNav greenButton center desktop-only text">
             <span className="text">Un projet ?</span>
-            <span className="icon">💡</span>
           </div>
         </a>
 
@@ -104,7 +103,9 @@ const Navbar = () => {
                       setToggle(!toggle);
                     }}
                   >
-                    <a href={cv} download>{nav.title}</a>
+                    <a href={cv} download>
+                      {nav.title}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -120,7 +121,9 @@ const Navbar = () => {
                       setToggle(!toggle);
                     }}
                   >
-                    <a href="https://tristanbossard-besoin-projet.softr.app">{nav.title}</a>
+                    <a href="https://tristanbossard-besoin-projet.softr.app">
+                      {nav.title}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -140,12 +143,19 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <img
-              src={menu}
-              alt="menu"
-              className="w-[34px] h-[34px] object-contain cursor-pointer"
-              onClick={() => setToggle(!toggle)}
-            />
+            <div className="flex items-center">
+              <a href="https://tristanbossard-besoin-projet.softr.app">
+                <div className="buttonNav greenButton center text">
+                  <span className="icon">💡</span>
+                </div>
+              </a>
+              <img
+                src={menu}
+                alt="menu"
+                className="w-[34px] h-[34px] object-contain cursor-pointer"
+                onClick={() => setToggle(!toggle)}
+              />
+            </div>
           )}
         </div>
       </div>

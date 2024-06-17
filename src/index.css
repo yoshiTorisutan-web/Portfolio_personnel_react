@@ -879,7 +879,7 @@ body::-webkit-scrollbar-thumb {
 
 /*Liste navigation mobile */
 .listeMobile {
-  margin-left:-5px;
+  margin-left: -5px;
 }
 
 /*Button Navbar */
@@ -932,15 +932,11 @@ body::-webkit-scrollbar-thumb {
     outline-offset: -4px;
   }
 
-  @media screen and (max-width: 768px) {
-    span.icon {display:inline-block}
-    span.text {display:none}
-
+  @media only screen and (max-width: 640px) {
     display: flex;
     overflow: hidden;
 
-
-    margin-left: 80px;
+    margin: 10px;
     padding: 5px 5px;
 
     cursor: pointer;
@@ -955,7 +951,7 @@ body::-webkit-scrollbar-thumb {
     border: 0 none;
     border-radius: 20px;
 
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.3;
 
@@ -985,14 +981,30 @@ body::-webkit-scrollbar-thumb {
       outline-offset: -4px;
     }
   }
-
-  @media screen and (min-width: 769px) {
-    span.icon {display:none}
-    div.text {display:inline-block}
-  }
 }
 
 .greenButton {
   color: var(--color-snow);
   background: rgba(61, 131, 97, 1);
+}
+
+/* Bouton projet navbar desktop-only */
+.desktop-only {
+  display: none; /* Masquer par défaut sur tous les écrans */
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-only {
+    display: block; /* Afficher sur les écrans de bureau */
+  }
+}
+
+/* Bouton projet navbar à côté du menu burger */
+.flex {
+  display: flex;
+  align-items: center; /* Aligner les éléments verticalement au centre */
+}
+
+.mr-2 {
+  margin-right: 0.5rem; /* Espacement entre les deux éléments */
 }
