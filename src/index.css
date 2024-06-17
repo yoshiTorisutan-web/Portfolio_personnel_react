@@ -1000,7 +1000,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Bouton projet navbar à côté du menu burger */
-.flex {
+.flexButton {
   display: flex;
   align-items: center; /* Aligner les éléments verticalement au centre */
 }

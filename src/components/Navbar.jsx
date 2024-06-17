@@ -143,7 +143,7 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <div className="flex items-center">
+            <div className="flexButton items-center">
               <a href="https://tristanbossard-besoin-projet.softr.app">
                 <div className="buttonNav greenButton center text">
                   <span className="icon">💡</span>
