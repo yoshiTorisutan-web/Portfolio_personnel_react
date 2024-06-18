@@ -29,12 +29,12 @@ const Navbar = () => {
           <img
             src={logo} // votre logo ici
             alt="logo"
-            className="smooth sm:w-[100px] sm:h-[100px] w-[45px] h-[45px] object-contain"
+            className="smooth sm:w-[100px] sm:h-[100px] w-[50px] h-[50px] object-contain"
           />
 
           {/* if you have text you want besides your logo it comes here.
   Otherwise delete this if you don't need it. */}
-          <p className="typewriter text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] font-poppins font-extrabold uppercase text-black mr-2">
+          <p className="typewriter text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] font-poppins font-extrabold uppercase text-black mr-2">
             Tristan Bossard
           </p>
         </Link>
@@ -152,7 +152,7 @@ const Navbar = () => {
               <img
                 src={menu}
                 alt="menu"
-                className="w-[34px] h-[34px] object-contain cursor-pointer"
+                className="w-[30px] h-[30px] object-contain cursor-pointer"
                 onClick={() => setToggle(!toggle)}
               />
             </div>
