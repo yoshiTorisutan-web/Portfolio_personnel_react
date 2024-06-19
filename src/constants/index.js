@@ -173,32 +173,32 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Développement web et Création numérique",
+    title: "Développement web et Création numérique 🎨",
     company_name: "Autodidacte",
     icon: autodidacte,
     iconBg: "#333333",
     date: "Févr 2021 - Août 2021",
   },
   {
-    title: "Développeur Frontend",
+    title: "Développeur web 🌐 - VueJS et C#",
     company_name: "Pasquier",
     icon: pasquier,
     iconBg: "#333333",
     date: "Sept 2021 - Août 2022",
   },
   {
-    title: "Développeur Backend",
+    title: "Développeur Wordpress 🌐 - PHP & MySQL",
     company_name: "ESPL",
     icon: espl,
     iconBg: "#333333",
     date: "Sept 2022 - Août 2023",
   },
   {
-    title: "Chef de projet numérique",
+    title: "Chef de projet web 🌐 - Outils digitaux & CRM",
     company_name: "ESPL",
     icon: espl,
     iconBg: "#333333",
-    date: "Sept 2023 - Août 2025",
+    date: "Sept 2023 - En cours",
   },
 ];
 

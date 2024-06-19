@@ -34,7 +34,7 @@ const Navbar = () => {
 
           {/* if you have text you want besides your logo it comes here.
   Otherwise delete this if you don't need it. */}
-          <p className="typewriter text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] font-poppins font-extrabold uppercase text-black mr-2">
+          <p className="typewriter text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[21px] font-poppins font-extrabold uppercase text-black mr-2">
             Tristan Bossard
           </p>
         </Link>
