@@ -48,6 +48,7 @@ const Hero = () => {
                   >
                     <span className="wrap"></span>
                   </p>
+                  <p className="static-text">Tristan.</p>
                 </span>
               </span>
             </h1>

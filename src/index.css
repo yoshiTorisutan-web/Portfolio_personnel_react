@@ -687,6 +687,23 @@ body::-webkit-scrollbar-thumb {
   display: inline-block;
 }
 
+@media (max-width: 768px) {
+  .typewrite {
+    display: none; /* Hide typewriter animation on mobile */
+  }
+
+  .static-text {
+    display: inline; /* Show static text on mobile */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 769px) {
+  .static-text {
+    display: none; /* Hide static text on larger screens */
+  }
+}
+
 .heroHeadText {
   display: flex;
   align-items: center;
