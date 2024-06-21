@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
-import { navLinks, curriculumvitaeLinks, projectsLinks } from "../constants";
+import { navLinks, curriculumvitaeLinks } from "../constants";
 import { close, menu, logo, cv } from "../assets";
 
 import "../index.css";
@@ -34,7 +34,7 @@ const Navbar = () => {
 
           {/* if you have text you want besides your logo it comes here.
   Otherwise delete this if you don't need it. */}
-          <p className="typewriter text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[21px] font-poppins font-extrabold uppercase text-black mr-2">
+          <p className="smooth text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[21px] font-poppins font-extrabold uppercase text-black mr-2">
             Tristan Bossard
           </p>
         </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
         </ul>
         <a href="https://tristanbossard-besoin-projet.softr.app">
           <div className="buttonNav greenButton center desktop-only text">
-            <span className="text">Un projet ?</span>
+            <span className="text">Un projet ? 💡</span>
           </div>
         </a>
 
@@ -109,24 +109,13 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <ul className="list-none flex flex-col -gap-[1rem] items-start justify-end listeMobile">
-                {projectsLinks.map((nav) => (
-                  <li
-                    id={nav.id}
-                    key={nav.id}
-                    className={`${
-                      active === nav.title ? "textColor-current" : "text-black"
-                    } text-[40px] font-medium font-mova uppercase tracking-[1px] cursor-pointer`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                    }}
-                  >
-                    <a href="https://tristanbossard-besoin-projet.softr.app">
-                      {nav.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              <div className="footerProject">
+                <a href="https://tristanbossard-besoin-projet.softr.app">
+                  <div className="buttonNavFooter greenButton center text">
+                    <span className="text">Un projet ? 💡</span>
+                  </div>
+                </a>
+              </div>
               <div className="footerLogo">
                 <div>
                   <img
@@ -152,7 +141,7 @@ const Navbar = () => {
               <img
                 src={menu}
                 alt="menu"
-                className="w-[30px] h-[30px] object-contain cursor-pointer"
+                className="w-[35px] h-[35px] object-contain cursor-pointer"
                 onClick={() => setToggle(!toggle)}
               />
             </div>

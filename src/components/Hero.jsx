@@ -2,10 +2,11 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { tristan, galaxy } from "../assets";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import "../index.css";
+import "./typewriter.js";
 
 const Hero = () => {
   return (
@@ -38,17 +39,23 @@ const Hero = () => {
               className={`${styles.heroHeadText} text-green-950 font-poppins uppercase`}
             >
               Hello👋 I'm{" "}
-              <span
-                className="sm:text-battleGray sm:text-[90px] 
-                text-eerieBlack text-[50px] font-mova
-                font-extrabold uppercase"
-              >
-                Tristan.
+              <span className="sm:text-battleGray sm:text-[90px] text-eerieBlack text-[50px] font-mova font-extrabold uppercase">
+                <span className="typewrite-container">
+                  <p
+                    className="typewrite"
+                    data-period="2000"
+                    data-type='[ "Tristan.", "Creative.", "Designer.", "Developer." ]'
+                  >
+                    <span className="wrap"></span>
+                  </p>
+                </span>
               </span>
             </h1>
             <a href="https://tristanbossard-besoin-projet.softr.app">
               <div className="btn-effect">
-                <button className={`button-effect text-timberWolf font-medium mb-4 lg:text-xl`}>
+                <button
+                  className={`button-effect text-timberWolf font-medium mb-4 lg:text-xl`}
+                >
                   <span className="text">Un projet ?</span>
                   <div className="icon-container">
                     <div className="icon icon--left">

@@ -53,13 +53,6 @@ export const curriculumvitaeLinks = [
   }
 ];
 
-export const projectsLinks = [
-  {
-    id: "projectidea",
-    title: "Idée Projet",
-  }
-];
-
 const services = [
   {
     title: "Développeur web",
