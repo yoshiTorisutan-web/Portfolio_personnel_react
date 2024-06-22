@@ -354,6 +354,7 @@ body::-webkit-scrollbar-thumb {
 .footer__logo {
   width: 70px;
   height: 70px;
+  margin-right: 50px;
 }
 
 .footer__right {

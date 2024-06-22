@@ -7,5 +7,6 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 import ScrollToTopButton from './ScrollToTopButton';
+import LegalMentions from './LegalMentions';
 
-export { Hero, Navbar, About, Tech, Experience, Projects, Contact, Footer, ScrollToTopButton };
+export { Hero, Navbar, About, Tech, Experience, Projects, Contact, Footer, ScrollToTopButton, LegalMentions };
