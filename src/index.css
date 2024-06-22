@@ -687,7 +687,7 @@ body::-webkit-scrollbar-thumb {
   display: inline-block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .typewrite {
     display: none; /* Hide typewriter animation on mobile */
   }
@@ -698,7 +698,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Media query for larger screens */
-@media (min-width: 769px) {
+@media (min-width: 1001px) {
   .static-text {
     display: none; /* Hide static text on larger screens */
   }
@@ -865,7 +865,7 @@ body::-webkit-scrollbar-thumb {
 /* Project Footer menu burger */
 .footerProject {
   position: absolute;
-  bottom: 120px;
+  bottom: 150px;
   left: 0; /* Ajustez si nécessaire */
   width: 100%; /* Assure une largeur de 100% pour occuper toute la largeur disponible */
   display: flex;
@@ -977,8 +977,8 @@ body::-webkit-scrollbar-thumb {
 /* Logo Footer menu burger */
 .footerLogo {
   position: absolute;
-  bottom: 50px;
-  left: 0; /* Ajustez si nécessaire */
+  bottom: 80px;
+  left: -10px; /* Ajustez si nécessaire */
   width: 100%; /* Assure une largeur de 100% pour occuper toute la largeur disponible */
   display: flex;
   align-items: center;
