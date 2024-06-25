@@ -705,6 +705,23 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+/*Hello Hero Text */
+/* Par défaut, masquez l'élément pour mobile */
+.mobile-onlyTitle {
+  display: none;
+}
+
+/* Affichez l'élément pour mobile sur les petits écrans */
+@media (max-width: 768px) {
+  .desktop-onlyTitle {
+    display: none;
+  }
+  .mobile-onlyTitle {
+    display: inline;
+  }
+}
+
+
 .heroHeadText {
   display: flex;
   align-items: center;
