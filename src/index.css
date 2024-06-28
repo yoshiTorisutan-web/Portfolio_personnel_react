@@ -1134,3 +1134,8 @@ body::-webkit-scrollbar-thumb {
 .mr-2 {
   margin-right: 0.5rem; /* Espacement entre les deux éléments */
 }
+
+/*Margin-bottom element Legal Mentions */
+.bottomElement {
+  margin-bottom: 10px;
+}

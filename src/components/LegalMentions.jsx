@@ -9,8 +9,8 @@ const LegalMentions = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
 
   return (
-    <div className={isMobile ? "mt-[4rem]" : "mt-[8rem]"}>
-      <div className="max-w-sm p-6">
+    <div className={isMobile ? "mt-[4rem]" : "mt-[8rem] bottomElement"}>
+      <div className="w-full flex justify-center">
         <div className="container mx-auto p-6 bg-white shadow-md rounded-lg text-jet">
           <motion.div variants={isMobile ? {} : textVariant()}>
             <h2 className={styles.sectionHeadText}>Mentions Légales</h2>
