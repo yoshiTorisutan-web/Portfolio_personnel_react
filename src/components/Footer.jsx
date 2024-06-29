@@ -11,7 +11,8 @@ function Footer() {
           alt="Logo"
           className="footer__logo w-12 h-12"
         />
-        <Link className="footer__text text-white text-[10px] md:text-[16px] font-poppins ml-4" to="/mentions-legales">Mentions Légales</Link>
+        <Link className="footer__text text-white text-[10px] md:text-[16px] font-poppins" to="/mentions-legales">Mentions Légales</Link>
+        <Link className="footer__text text-white text-[10px] md:text-[16px] font-poppins ml-4" to="/confidential-politic">Politique de confidentialité</Link>
       </div>
       <div className="footer__right text-right mt-4 md:mt-0">
         <p className="footer__text text-white text-[10px] md:text-[16px] font-poppins">

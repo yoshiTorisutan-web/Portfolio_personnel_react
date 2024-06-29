@@ -10,6 +10,7 @@ import {
   Footer,
   ScrollToTopButton,
   LegalMentions,
+  ConfidentialPolitic,
 } from "./components";
 
 import "./index.css";
@@ -56,6 +57,7 @@ const App = () => {
             }
           />
           <Route path="/mentions-legales" element={<LegalMentions />} />
+          <Route path="/confidential-politic" element={<ConfidentialPolitic />} />
         </Routes>
       </div>
     </BrowserRouter>

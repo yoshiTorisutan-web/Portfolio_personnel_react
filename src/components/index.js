@@ -8,5 +8,6 @@ import Contact from './Contact';
 import Footer from './Footer';
 import ScrollToTopButton from './ScrollToTopButton';
 import LegalMentions from './LegalMentions';
+import ConfidentialPolitic from './ConfidentialPolitic';
 
-export { Hero, Navbar, About, Tech, Experience, Projects, Contact, Footer, ScrollToTopButton, LegalMentions };
+export { Hero, Navbar, About, Tech, Experience, Projects, Contact, Footer, ScrollToTopButton, LegalMentions, ConfidentialPolitic };
