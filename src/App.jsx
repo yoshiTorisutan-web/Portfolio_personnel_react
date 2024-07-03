@@ -49,16 +49,19 @@ const App = () => {
                 <div className="relative z-0">
                   <Contact />
                 </div>
-                <div className="relative z-0">
+                <div className="relative z-0 bottomFooter">
                   <Footer />
                 </div>
-                <ScrollToTopButton />
               </>
             }
           />
           <Route path="/mentions-legales" element={<LegalMentions />} />
-          <Route path="/confidential-politic" element={<ConfidentialPolitic />} />
+          <Route
+            path="/confidential-politic"
+            element={<ConfidentialPolitic />}
+          />
         </Routes>
+        <ScrollToTopButton />
       </div>
     </BrowserRouter>
   );

@@ -368,8 +368,8 @@ body::-webkit-scrollbar-thumb {
 /*ScrollToTop*/
 .scroll-to-top-button {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 15px;
+  right: 15px;
   background-color: #415d43d4;
   color: #ffff;
   padding: 10px 15px;
@@ -1138,4 +1138,11 @@ body::-webkit-scrollbar-thumb {
 /*Margin-bottom element Legal Mentions */
 .bottomElement {
   margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*Bottom Footer */
+.bottomFooter {
+  padding-bottom: 10px;
 }
