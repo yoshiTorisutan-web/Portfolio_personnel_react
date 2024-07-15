@@ -83,14 +83,14 @@ const SocialLinks = () => {
       <p>
         <b>Linkedin</b>
       </p>
-      <a href="https://www.linkedin.com/" className="ml-2 mr-2">
-        <FaLinkedin size={30} />
+      <a href="https://www.linkedin.com/" className="ml-2 mr-2 iconSM-hover">
+        <FaLinkedin size={30} color="#0e76a8"/>
       </a>
       <p className="ml-5">
         <b>Github</b>
       </p>
-      <a href="https://github.com/" className="ml-2 mr-2">
-        <FaGithub size={30} />
+      <a href="https://github.com/" className="ml-2 mr-2 iconSM-hover">
+        <FaGithub size={30} color="#6c6cec"/>
       </a>
     </div>
   );

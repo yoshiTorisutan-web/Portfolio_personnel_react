@@ -1146,3 +1146,21 @@ body::-webkit-scrollbar-thumb {
 .bottomFooter {
   padding-bottom: 10px;
 }
+
+/*Button plus hover */
+.plus-hover {
+  transition: filter 0.3s ease; /* Animation pour un effet en douceur */
+}
+
+.plus-hover:hover {
+  filter: brightness(1.5); /* Augmenter la luminosité de l'image */
+}
+
+/*icon hover Lnkedin & Github */
+.iconSM-hover {
+  transition: filter 0.3s ease; /* Animation pour un effet en douceur */
+}
+
+.iconSM-hover:hover {
+  filter: brightness(1.5); /* Augmenter la luminosité de l'image */
+}

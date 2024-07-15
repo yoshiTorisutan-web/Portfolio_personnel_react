@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { github, plus } from "../assets";
+import { plus } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 
@@ -71,7 +71,7 @@ const ProjectCard = ({
                 <img
                   src={plus}
                   alt="Voir plus"
-                  className="w-3/5 h-3/5 object-contain"
+                  className="w-3/5 h-3/5 object-contain plus-hover"
                 />
               </div>
             </div>

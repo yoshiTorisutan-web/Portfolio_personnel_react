@@ -123,7 +123,7 @@ export const Contact = (index) => {
     whitespace-nowrap sm:w-[250px] sm:h-[50px] 
     w-[150px] h-[50px] rounded-[10px] bg-color-input
     hover:bg-black hover:text-white
-    transition duration-[0.2s] ease-in-out"
+    transition duration-[0.2s] ease-in-out cursor-pointer"
             disabled={!capVal}
             onMouseOver={() => {
               document
