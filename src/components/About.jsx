@@ -13,7 +13,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { astronaut, astronaut_fun } from "../assets";
 
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaPinterest, FaYoutube } from "react-icons/fa";
 import { useMediaQuery } from "@react-hook/media-query";
 
 import YouTube from "react-youtube";
@@ -83,14 +83,26 @@ const SocialLinks = () => {
       <p>
         <b>Linkedin</b>
       </p>
-      <a href="https://www.linkedin.com/" className="ml-2 mr-2 iconSM-hover">
+      <a href="https://www.linkedin.com/in/tristan-bossard-dw/" className="ml-2 mr-2 iconSM-hover">
         <FaLinkedin size={30} color="#0e76a8"/>
       </a>
       <p className="ml-5">
         <b>Github</b>
       </p>
-      <a href="https://github.com/" className="ml-2 mr-2 iconSM-hover">
+      <a href="https://github.com/yoshiTorisutan-web/" className="ml-2 mr-2 iconSM-hover">
         <FaGithub size={30} color="#6c6cec"/>
+      </a>
+      <p className="ml-5">
+        <b>Pinterest</b>
+      </p>
+      <a href="https://www.pinterest.fr/yoshiTorisutan_creative/" className="ml-2 mr-2 iconSM-hover">
+        <FaPinterest size={30} color="#E60023"/>
+      </a>
+      <p className="ml-5">
+        <b>Youtube</b>
+      </p>
+      <a href="https://www.youtube.com/@tbd_motorsport8594/" className="ml-2 mr-2 iconSM-hover">
+        <FaYoutube size={30} color="#E60023"/>
       </a>
     </div>
   );
