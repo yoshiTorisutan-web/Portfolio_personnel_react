@@ -79,31 +79,31 @@ const HobbiesCard = ({ index, title, icon }) => {
 
 const SocialLinks = () => {
   return (
-    <div className="flex items-center">
-      <p>
-        <b>Linkedin</b>
-      </p>
-      <a href="https://www.linkedin.com/in/tristan-bossard-dw/" className="ml-2 mr-2 iconSM-hover">
-        <FaLinkedin size={30} color="#0e76a8"/>
-      </a>
-      <p className="ml-5">
-        <b>Github</b>
-      </p>
-      <a href="https://github.com/yoshiTorisutan-web/" className="ml-2 mr-2 iconSM-hover">
-        <FaGithub size={30} color="#6c6cec"/>
-      </a>
-      <p className="ml-5">
-        <b>Pinterest</b>
-      </p>
-      <a href="https://www.pinterest.fr/yoshiTorisutan_creative/" className="ml-2 mr-2 iconSM-hover">
-        <FaPinterest size={30} color="#E60023"/>
-      </a>
-      <p className="ml-5">
-        <b>Youtube</b>
-      </p>
-      <a href="https://www.youtube.com/@tbd_motorsport8594/" className="ml-2 mr-2 iconSM-hover">
-        <FaYoutube size={30} color="#E60023"/>
-      </a>
+    <div className="social-links">
+      <div className="social-link">
+        <p><b>Linkedin</b></p>
+        <a href="https://www.linkedin.com/in/tristan-bossard-dw/" className="iconSM-hover">
+          <FaLinkedin size={30} color="#0e76a8"/>
+        </a>
+      </div>
+      <div className="social-link">
+        <p><b>Github</b></p>
+        <a href="https://github.com/yoshiTorisutan-web/" className="iconSM-hover">
+          <FaGithub size={30} color="#6c6cec"/>
+        </a>
+      </div>
+      <div className="social-link">
+        <p><b>Pinterest</b></p>
+        <a href="https://www.pinterest.fr/yoshiTorisutan_creative/" className="iconSM-hover">
+          <FaPinterest size={30} color="#E60023"/>
+        </a>
+      </div>
+      <div className="social-link">
+        <p><b>Youtube</b></p>
+        <a href="https://www.youtube.com/@tbd_motorsport8594/" className="iconSM-hover">
+          <FaYoutube size={30} color="#E60023"/>
+        </a>
+      </div>
     </div>
   );
 };
@@ -122,10 +122,16 @@ const About = () => {
           variants={isMobile ? {} : fadeIn("", "", 0.1, 1)}
           className="textAbout mt-4 text-jet text-[18px] max-w-3xl leading-[30px] md:mr-8"
         >
-          Moi c'est <b><em>Tristan</em></b>, <b>développeur web</b> de formation.
+          Moi c'est{" "}
+          <b>
+            <em>Tristan</em>
+          </b>
+          , <b>développeur web</b> de formation.
           <br></br>
           <br></br>
-          <em>Mes passions ?</em> La <b>création graphique</b>, <b>l'informatique</b> et plus encore que j'ai détaillé par la suite.<br></br>
+          <em>Mes passions ?</em> La <b>création graphique</b>,{" "}
+          <b>l'informatique</b> et plus encore que j'ai détaillé par la suite.
+          <br></br>
           <br></br>
           De nature <b>curieux</b> et <b>dynamique</b>, j’aime créer et
           m’améliorer chaque jour en développant de nouvelles compétences dans
@@ -189,8 +195,8 @@ const About = () => {
           développer et à améliorer leur site internet.
           <br></br>
           <br></br>
-          <em>Mon objectif final ?</em> Perfectionner mes compétences en développement
-          web et webdesign et acquérir une casquette de{" "}
+          <em>Mon objectif final ?</em> Perfectionner mes compétences en
+          développement web et webdesign et acquérir une casquette de{" "}
           <b>chef de projet digital</b> à la fin de mes études.
           <br></br>
           <br></br>

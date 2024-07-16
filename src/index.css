@@ -1164,3 +1164,38 @@ body::-webkit-scrollbar-thumb {
 .iconSM-hover:hover {
   filter: brightness(1.5); /* Augmenter la luminosité de l'image */
 }
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap; /* Permet le retour à la ligne des éléments */
+  gap: 20px; /* Ajoute un espace entre les éléments */
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  margin: 0 5px; /* Diminue l'écart entre les textes */
+}
+
+.social-link p {
+  margin-right: 10px; /* Augmente l'écart entre l'icône et le texte */
+}
+
+/* Styles pour mobiles */
+@media (max-width: 768px) {
+  .social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; /* Ajuste l'écart entre les éléments dans la grille */
+    justify-items: center;
+    align-items: center;
+  }
+
+  .social-link {
+    margin: 5px 0; /* Ajuste l'écart vertical entre les éléments en mode mobile */
+  }
+}
+
+
+
+
