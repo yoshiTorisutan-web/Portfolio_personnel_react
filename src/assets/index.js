@@ -57,6 +57,7 @@ import graphisme from './projects/graphisme.png';
 import photo from './projects/montage_photo.jpg';
 import video from './projects/montage_video.png';
 import web from './projects/site_web.png';
+import music_cover from './projects/Oldvine_King_Of_The_Road.png';
 
 import rocket from './icons/rocket.png';
 
@@ -106,6 +107,7 @@ export {
   photo,
   video,
   web,
+  music_cover,
   pasquier,
   espl,
   autodidacte,

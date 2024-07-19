@@ -16,6 +16,7 @@ import {
   git,
   figma,
   web,
+  music_cover,
   mobile,
   graphisme,
   photo,
@@ -219,7 +220,7 @@ const projects = [
   },
   {
     id: "project-4",
-    name: "Graphisme/Dessin",
+    name: "Graphisme Dessin",
     description: `Découvrez un premier aperçu de l’ensemble de mes créations.`,
     image: graphisme,
     repo: "https://www.pinterest.fr/yoshiTorisutan_creative/",
@@ -230,6 +231,13 @@ const projects = [
     description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
     image: video,
     repo: "https://www.youtube.com/channel/UCYYPTNdt3bpRT8BGQIC9YJg",
+  },
+  {
+    id: "project-6",
+    name: "Music Cover",
+    description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
+    image: music_cover,
+    repo: "https://www.youtube.com/watch?v=Uqb1bpoD4mI&ab_channel=Oldvine-Topic",
   },
 ];
 

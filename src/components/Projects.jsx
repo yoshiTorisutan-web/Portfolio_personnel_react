@@ -75,13 +75,14 @@ const ProjectCard = ({
                 />
               </div>
             </div>
-
+            <br></br><br></br>
             <h2
-              className="font-bold sm:text-[26px] text-[20px] 
+              className="font-bold sm:text-[20px] text-[14px] 
               text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]"
             >
               {name}
             </h2>
+            <br></br>
             <p
               className="text-silver sm:text-[14px] text-[12px] 
               max-w-3xl sm:leading-[24px] leading-[18px]
