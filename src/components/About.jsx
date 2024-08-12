@@ -81,27 +81,47 @@ const SocialLinks = () => {
   return (
     <div className="social-links">
       <div className="social-link">
-        <p><b>Linkedin</b></p>
-        <a href="https://www.linkedin.com/in/tristan-bossard-dw/" className="iconSM-hover">
-          <FaLinkedin size={30} color="#0e76a8"/>
+        <p>
+          <b>Linkedin</b>
+        </p>
+        <a
+          href="https://www.linkedin.com/in/tristan-bossard-dw/"
+          className="iconSM-hover"
+        >
+          <FaLinkedin size={30} color="#0e76a8" />
         </a>
       </div>
       <div className="social-link">
-        <p><b>Github</b></p>
-        <a href="https://github.com/yoshiTorisutan-web/" className="iconSM-hover">
-          <FaGithub size={30} color="#6c6cec"/>
+        <p>
+          <b>Github</b>
+        </p>
+        <a
+          href="https://github.com/yoshiTorisutan-web/"
+          className="iconSM-hover"
+        >
+          <FaGithub size={30} color="#6c6cec" />
         </a>
       </div>
       <div className="social-link">
-        <p><b>Pinterest</b></p>
-        <a href="https://www.pinterest.fr/yoshiTorisutan_creative/" className="iconSM-hover">
-          <FaPinterest size={30} color="#E60023"/>
+        <p>
+          <b>Pinterest</b>
+        </p>
+        <a
+          href="https://www.pinterest.fr/yoshiTorisutan_creative/"
+          className="iconSM-hover"
+        >
+          <FaPinterest size={30} color="#E60023" />
         </a>
       </div>
       <div className="social-link">
-        <p><b>Youtube</b></p>
-        <a href="https://www.youtube.com/@tbd_motorsport8594/" className="iconSM-hover">
-          <FaYoutube size={30} color="#E60023"/>
+        <p>
+          <b>Youtube</b>
+        </p>
+        <a
+          href="https://www.youtube.com/@tbd_motorsport8594/"
+          className="iconSM-hover"
+        >
+          <FaYoutube size={30} color="#E60023" />
         </a>
       </div>
     </div>
@@ -126,24 +146,27 @@ const About = () => {
           <b>
             <em>Tristan</em>
           </b>
-          , <b>développeur web</b> de formation.
+          , <b>développeur web</b> passionné et créatif.
           <br></br>
           <br></br>
-          <em>Mes passions ?</em> La <b>création graphique</b>,{" "}
-          <b>l'informatique</b> et plus encore que j'ai détaillé par la suite.
+          <em>Mes centres d'intérêts ?</em> La <b>création graphique</b>,{" "}
+          <b>l'informatique</b> et bien plus encore, que je vous invite à
+          découvrir au fil de ce portfolio.
           <br></br>
           <br></br>
-          De nature <b>curieux</b> et <b>dynamique</b>, j’aime créer et
-          m’améliorer chaque jour en développant de nouvelles compétences dans
-          le <b>web</b> mais également dans le <b>graphisme</b>.<br></br>
+          Curieux et dynamique, j'évolue chaque jour en enrichissant mes
+          compétences dans le domaine du <b>web</b> et du{" "}
+          <b>design graphique</b>. Chaque projet sur lequel je travaille est
+          pour moi une opportunité d'apprendre et de me dépasser.<br></br>
           <br></br>
-          Lorsque je travaille sur un projet qui me <b>passionne</b>, je ne
-          compte pas mes heures et je donne tout pour y arriver. <br></br>
+          Lorsque je suis immergé dans un projet qui me <b>passionne</b>, je me
+          donne à fond sans compter mes heures pour atteindre l'excellence.{" "}
           <br></br>
-          Malgré mon caractère de « <b>discret</b> », cela me permet d’observer
-          le monde qui nous entoure et de me concentrer sur des éléments qui
-          m’entourent me permettant d’engranger de nouvelles idées pour mes
-          futures créations.
+          <br></br>
+          Mon caractère <b>discret</b> m'offre une perspective unique : il
+          m'incite à observer attentivement le monde qui m'entoure, à capter les
+          détails qui nourrissent ma créativité et inspirent mes futures
+          réalisations.
           <br></br>
           <br></br>
           <SocialLinks />
@@ -184,29 +207,26 @@ const About = () => {
           GRETA d'Angers.
           <br></br>
           <br></br>
-          Par la suite, j'ai pu poursuivre vers un Bachelor Développeur Web à
-          MyDigitalSchool Angers afin d'obtenir mon{" "}
+          Par la suite, j'ai poursuivi mes études avec un Bachelor Développeur
+          Web à MyDigitalSchool Angers, où j'ai décroché le{" "}
           <b>Titre Professionnel Concepteur Développeur d'Applications</b> (TP
           CDA).<br></br>
           <br></br>
-          De plus, je souhaite obtenir à l'avenir une double compétence
-          <b> développement web</b> et <b>webdesign</b> afin d'obtenir un panel
-          de compétences sur un projet web, et ainsi aider les entreprises à
-          développer et à améliorer leur site internet.
+          Mon objectif est d'acquérir une double compétence en{" "}
+          <b>développement web</b> et en <b>webdesign</b>, afin de maîtriser
+          l'ensemble des aspects d'un projet web. Ainsi, je pourrai accompagner
+          les entreprises dans la création et l'amélioration de leurs sites
+          internet.
           <br></br>
           <br></br>
-          <em>Mon objectif final ?</em> Perfectionner mes compétences en
-          développement web et webdesign et acquérir une casquette de{" "}
-          <b>chef de projet digital</b> à la fin de mes études.
+          <em>Et mon ambition ultime ?</em> Devenir un{" "}
+          <b>chef de projet digital</b> aguerri, en perfectionnant
+          continuellement mes compétences en développement web et en webdesign.
           <br></br>
           <br></br>
-          N’hésitez pas à parcourir mon travail. Bien entendu, je n'ai pas tout
-          mis, alors si vous voulez qu'on papote et qu'on apprenne à se
-          connaître.
-          <br></br>
-          <br></br>
-          Ou alors, si vous souhaitez collaborer ou simplement me dire bonjour,
-          <b> contactez-moi</b> !<br></br>
+          Je vous invite à découvrir mes réalisations. Bien sûr, tout n'est pas
+          ici, alors si vous souhaitez discuter, en apprendre plus sur moi, ou
+          envisager une collaboration, <b>contactez-moi</b> !<br></br>
         </motion.p>
 
         {!isMobile && (
