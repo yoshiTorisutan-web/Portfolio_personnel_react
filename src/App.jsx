@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import {
   About,
   Contact,
@@ -16,6 +17,29 @@ import {
 import "./index.css";
 
 const App = () => {
+  useEffect(() => {
+    // Désactiver le clic droit sur tout le site
+    const disableRightClick = (e) => {
+      e.preventDefault();
+    };
+
+    // Désactiver l'ouverture des outils de développement avec F12 et Ctrl+Shift+I
+    const disableDevTools = (e) => {
+      if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+        e.preventDefault();
+      }
+    };
+
+    // Attacher les événements lors du montage du composant
+    document.addEventListener("contextmenu", disableRightClick);
+    document.addEventListener("keydown", disableDevTools);
+
+    // Nettoyer les événements lors du démontage du composant
+    return () => {
+      document.removeEventListener("contextmenu", disableRightClick);
+      document.removeEventListener("keydown", disableDevTools);
+    };
+  }, []);
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-projects">
