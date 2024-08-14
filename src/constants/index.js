@@ -17,6 +17,7 @@ import {
   figma,
   web,
   music_cover,
+  maquettage,
   mobile,
   graphisme,
   photo,
@@ -51,7 +52,7 @@ export const curriculumvitaeLinks = [
   {
     id: "curriculumvitae",
     title: "CV",
-  }
+  },
 ];
 
 const services = [
@@ -200,42 +201,49 @@ const projects = [
   {
     id: "project-1",
     name: "Site Web",
-    description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
+    description: "Explorez mes créations web modernes et fonctionnelles.",
     image: web,
     repo: "https://github.com/yoshiTorisutan-web/F1_Express",
   },
   {
     id: "project-2",
     name: "Application Mobile",
-    description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
+    description: "Découvrez mes applications mobiles interactives.",
     image: mobile,
     repo: "https://github.com/yoshiTorisutan-web/MyDigitalProject_Marc",
   },
   {
     id: "project-3",
     name: "Montage Photo",
-    description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
+    description: "Plongez dans mes montages photo créatifs.",
     image: photo,
     repo: "https://www.pinterest.fr/yoshiTorisutan_creative/",
   },
   {
     id: "project-4",
     name: "Graphisme Dessin",
-    description: `Découvrez un premier aperçu de l’ensemble de mes créations.`,
+    description: `Admirez mes dessins graphiques originaux.`,
     image: graphisme,
     repo: "https://www.pinterest.fr/yoshiTorisutan_creative/",
   },
   {
     id: "project-5",
     name: "Montage Vidéo",
-    description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
+    description: "Visionnez mes montages vidéo dynamiques.",
     image: video,
     repo: "https://www.youtube.com/channel/UCYYPTNdt3bpRT8BGQIC9YJg",
   },
   {
     id: "project-6",
+    name: "Maquettage",
+    description: "Explorez mes maquettes innovantes.",
+    image: maquettage,
+    repo: "https://www.figma.com/@tbd_design",
+  },
+  {
+    id: "project-7",
     name: "Music Cover",
-    description: "Découvrez un premier aperçu de l’ensemble de mes créations.",
+    description: "Visionnez la cover musicale de Oldvine.",
     image: music_cover,
     repo: "https://www.youtube.com/watch?v=Uqb1bpoD4mI&ab_channel=Oldvine-Topic",
   },

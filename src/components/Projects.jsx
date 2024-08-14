@@ -128,7 +128,7 @@ const Projects = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5 mb-4">
+        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-3 mb-4">
           {projects.map((project, index) => (
             <ProjectCard
               key={project.id}
