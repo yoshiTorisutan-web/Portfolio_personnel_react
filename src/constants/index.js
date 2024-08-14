@@ -95,42 +95,42 @@ const hobbies = [
 const technologies = [
   {
     name: "HTML",
-    temps: "3 ans",
+    temps: "4 ans",
     icon: html,
   },
   {
     name: "CSS",
-    temps: "3 ans",
+    temps: "4 ans",
     icon: css,
   },
   {
     name: "JavaScript",
-    temps: "3 ans",
+    temps: "4 ans",
     icon: javascript,
   },
   {
     name: "React",
-    temps: "1 an",
+    temps: "2 ans",
     icon: reactjs,
   },
   {
     name: "Tailwind",
-    temps: "1 an",
+    temps: "2 ans",
     icon: tailwind,
   },
   {
     name: "Node",
-    temps: "1 an",
+    temps: "2 ans",
     icon: nodejs,
   },
   {
     name: "git",
-    temps: "3 ans",
+    temps: "4 ans",
     icon: git,
   },
   {
     name: "figma",
-    temps: "3 ans",
+    temps: "4 ans",
     icon: figma,
   },
   {
@@ -160,7 +160,7 @@ const technologies = [
   },
   {
     name: "php",
-    temps: "3 ans",
+    temps: "4 ans",
     icon: php,
   },
 ];
