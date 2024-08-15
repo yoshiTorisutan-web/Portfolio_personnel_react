@@ -10,6 +10,7 @@ import {
   Projects,
   Footer,
   ScrollToTopButton,
+  HelpButton,
   LegalMentions,
   ConfidentialPolitic,
 } from "./components";
@@ -86,6 +87,7 @@ const App = () => {
           />
         </Routes>
         <ScrollToTopButton />
+        <HelpButton />
       </div>
     </BrowserRouter>
   );

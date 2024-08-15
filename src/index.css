@@ -721,7 +721,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-
 .heroHeadText {
   display: flex;
   align-items: center;
@@ -1196,6 +1195,72 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+/* Bouton info stylisé */
+.help-button {
+  border-radius: 50%;
+  width: 40px; /* Taille réduite */
+  height: 40px; /* Taille réduite */
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background-color: #415d43d4;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  color: white;
+}
 
+.help-button:hover {
+  background-color: #415d43;
+}
 
+/* Popover stylisé avec effet de fondu */
+.fade-popover {
+  max-width: 250px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: relative;
+}
 
+.fade-popover.show {
+  opacity: 1;
+}
+
+/* Style du texte dans le popover */
+.popover-body {
+  font-size: 14px; /* Ajustez la taille du texte */
+  color: #333; /* Ajustez la couleur du texte */
+  text-align: center; /* Optionnel : centre le texte */
+}
+
+.popover-link {
+  text-decoration: underline;
+  color: #415d43d4;
+}
+
+.popover-arrow {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
+  transform: translateY(-50%);
+}
+
+/* Masquer le bouton sur les écrans mobiles */
+@media (max-width: 768px) {
+  .help-button {
+    display: none; /* Masquer le bouton sur les écrans de moins de 768px */
+  }
+}
