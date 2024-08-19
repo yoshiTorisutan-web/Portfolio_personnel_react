@@ -1,39 +1,32 @@
 import { useState } from "react";
-import { Button, Popover, OverlayTrigger } from 'react-bootstrap';
 import { FaQuestionCircle } from "react-icons/fa";
-import "../index.css";
+import "../index.css"; // Assurez-vous de créer ce fichier CSS pour les styles
 
 const HelpButton = () => {
-  const [show, setShow] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleClick = () => {
-    setShow(!show);
+    setIsVisible((prev) => !prev);
   };
 
-  const popover = (
-    <Popover id="popover-basic" className="fade-popover">
-      <Popover.Body>
-        Besoin de renseignements sur mon parcours ?{" "}
-        <a href="https://missionavenir.softr.app/" className="popover-link">
-          <b>Clique ici !</b>
-        </a>
-      </Popover.Body>
-      <div className="popover-arrow" />
-    </Popover>
-  );
-
   return (
-    <OverlayTrigger
-      trigger="click"
-      placement="right"
-      overlay={popover}
-      show={show}
-      rootClose
-    >
-      <Button variant="primary" onClick={handleClick} className="help-button">
-        <FaQuestionCircle size={20} />
-      </Button>
-    </OverlayTrigger>
+    <div className="help-button-container">
+      <button className="help-button" onClick={handleClick}>
+        <FaQuestionCircle />
+      </button>
+      <div className={`popup ${isVisible ? "show" : ""}`}>
+        <p>
+        Perdu pour ton avenir ?{" "}
+          <a
+            href="https://missionavenir.softr.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Clique ici !
+          </a>
+        </p>
+      </div>
+    </div>
   );
 };
 
