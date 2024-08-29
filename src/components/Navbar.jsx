@@ -31,10 +31,6 @@ const Navbar = () => {
             alt="logo"
             className="smooth sm:w-[100px] sm:h-[100px] w-[50px] h-[50px] object-contain"
           />
-
-          {/* if you have text you want besides your logo it comes here.
-  Otherwise delete this if you don't need it. */}
-          
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-6 mt-2">
           {navLinks.map((nav) => (
