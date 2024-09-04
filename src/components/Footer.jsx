@@ -20,14 +20,16 @@ function Footer() {
           />
         </Link>
         <Link
-          className="footer__text text-white text-[10px] md:text-[16px] font-poppins"
+          className="footer__text footer__hyperlien text-white text-[10px] md:text-[16px] font-poppins"
           to="/mentions-legales"
+          onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
         >
-          Mentions Légales
+          Mentions légales
         </Link>
         <Link
-          className="footer__text text-white text-[10px] md:text-[16px] font-poppins ml-4"
+          className="footer__text footer__hyperlien text-white text-[10px] md:text-[16px] font-poppins ml-4"
           to="/confidential-politic"
+          onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
         >
           Politique de confidentialité
         </Link>

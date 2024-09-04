@@ -365,6 +365,11 @@ body::-webkit-scrollbar-thumb {
   margin-left: 50px;
 }
 
+.footer__hyperlien:hover{
+  color: #70846c;
+  transition: 0.3s;
+}
+
 /*ScrollToTop*/
 .scroll-to-top-button {
   position: fixed;
