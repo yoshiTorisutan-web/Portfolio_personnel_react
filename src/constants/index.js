@@ -221,14 +221,14 @@ const projects = [
     name: "Montage Photo",
     description: "Plongez dans mes montages photo créatifs.",
     image: photo,
-    repo: "https://www.pinterest.fr/yoshiTorisutan_creative/",
+    repo: "https://www.pinterest.fr/yoshiTorisutan_creative/montage-photo/",
   },
   {
     id: "project-4",
     name: "Graphisme Dessin",
     description: `Admirez mes dessins graphiques originaux.`,
     image: graphisme,
-    repo: "https://www.pinterest.fr/yoshiTorisutan_creative/",
+    repo: "https://www.pinterest.fr/yoshiTorisutan_creative/logo/",
   },
   {
     id: "project-5",
