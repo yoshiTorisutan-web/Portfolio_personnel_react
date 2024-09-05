@@ -27,9 +27,9 @@ const Navbar = () => {
           }}
         >
           <img
-            src={logo}
+            src={logo} // votre logo ici
             alt="logo"
-            className="smooth sm:w-[100px] sm:h-[100px] w-[80px] h-[80px] object-contain"
+            className="smooth sm:w-[100px] sm:h-[100px] w-[60px] h-[60px] object-contain"
           />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-6 mt-2">
