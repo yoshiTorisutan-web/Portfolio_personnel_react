@@ -35,11 +35,18 @@ const ExperienceCard = ({ experience }) => (
     iconStyle={{ background: experience.iconBg }}
     icon={
       <div className="flex justify-center items-center w-full h-full">
-        <img
-          src={experience.icon}
-          alt={experience.company_name}
-          className="w-[50%] h-[50%] object-contain"
-        />
+        <a
+          href={experience.repo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block text-center"
+        >
+          <img
+            src={experience.icon}
+            alt={experience.company_name}
+            className="inline-block w-[50%] h-[50%] object-contain"
+          />
+        </a>
       </div>
     }
   >
@@ -100,9 +107,7 @@ const Experience = () => {
           >
             <div>
               <a href={cv} download>
-                <div
-                  className="live-demo flex justify-between items-center download-link"
-                >
+                <div className="live-demo flex justify-between items-center download-link">
                   <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
                     Télécharger mon CV
                   </h3>

@@ -173,6 +173,7 @@ const experiences = [
     icon: autodidacte,
     iconBg: "#333333",
     date: "Févr 2021 - Août 2021",
+    repo: "https://github.com/yoshiTorisutan-web/"
   },
   {
     title: "Développeur web - VueJS et C# 🌐",
@@ -180,6 +181,7 @@ const experiences = [
     icon: pasquier,
     iconBg: "#333333",
     date: "Sept 2021 - Août 2022",
+    repo: "https://www.pasquier.fr/",
   },
   {
     title: "Développeur Wordpress - PHP & MySQL 🌐",
@@ -187,13 +189,15 @@ const experiences = [
     icon: espl,
     iconBg: "#333333",
     date: "Sept 2022 - Août 2023",
+    repo: "https://www.espl.fr/",
   },
   {
-    title: "Chef de projet web - Outils digitaux & CRM 🌐",
+    title: "Assistant chef de projet numérique - Outils digitaux & CRM 🌐",
     company_name: "ESPL",
     icon: espl,
     iconBg: "#333333",
     date: "Sept 2023 - En cours",
+    repo: "https://www.espl.fr",
   },
 ];
 
