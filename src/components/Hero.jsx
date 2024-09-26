@@ -39,7 +39,7 @@ const Hero = () => {
               className={`${styles.heroHeadText} text-green-950 font-poppins uppercase`}
             >
               <span className="desktop-onlyTitle">Hi</span>
-              <span className="mobile-onlyTitle">Hello</span> 👋 I'm{" "}
+              <span className="mobile-onlyTitle">Hello</span>👋 I'm{" "}
               <span className="sm:text-battleGray lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[90px] text-eerieBlack font-mova font-extrabold uppercase">
                 <span className="typewrite-container">
                   <p
