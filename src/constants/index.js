@@ -63,7 +63,7 @@ const services = [
     icon: dev,
   },
   {
-    title: "Gestion de projet",
+    title: "Gestion de projet & Tranformation digitale",
     icon: chief_project,
   },
   {
