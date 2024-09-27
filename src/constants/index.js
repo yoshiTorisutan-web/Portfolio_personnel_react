@@ -3,6 +3,8 @@ import {
   chief_project,
   webdesigner,
   art,
+  data,
+  photography,
   racing,
   videogames,
   creation,
@@ -30,7 +32,7 @@ import {
   php,
   pasquier,
   autodidacte,
-  espl,
+  espl
 } from "../assets";
 
 export const navLinks = [
@@ -57,7 +59,7 @@ export const curriculumvitaeLinks = [
 
 const services = [
   {
-    title: "Développeur web",
+    title: "Développement web",
     icon: dev,
   },
   {
@@ -65,12 +67,16 @@ const services = [
     icon: chief_project,
   },
   {
-    title: "Webdesigner",
+    title: "Webdesign",
     icon: webdesigner,
   },
   {
-    title: "Graphiste",
+    title: "Graphisme",
     icon: art,
+  },
+  {
+    title: "Data analyse",
+    icon: data,
   },
 ];
 
@@ -90,6 +96,10 @@ const hobbies = [
   {
     title: "Création",
     icon: creation,
+  },
+  {
+    title: "Photographie",
+    icon: photography,
   },
 ];
 

@@ -25,8 +25,8 @@ const ServiceCard = ({ index, title, icon }) => {
   return (
     <motion.div
       variants={isMobile ? {} : fadeIn("left", "spring", 0.5 * index, 0.75)}
-      className={`xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-hobbies ${
-        isMobile ? "mobile-card" : "" // Ajoutez une classe spécifique pour les appareils mobiles
+      className={`w-[18%] card-gradient p-[1px] rounded-[15px] shadow-hobbies ${
+        isMobile ? "mobile-card" : ""
       }`}
     >
       <div
@@ -35,12 +35,12 @@ const ServiceCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450,
         }}
-        className={`cardOne rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col ${
-          isMobile ? "mobile-card-content" : "" // Ajoutez une classe spécifique pour le contenu des cartes sur les appareils mobiles
+        className={`cardOne rounded-[15px] py-3 px-8 min-h-[280px] flex justify-evenly items-center flex-col ${
+          isMobile ? "mobile-card-content" : ""
         }`}
       >
-        <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-        <h3 className="text-white-100 text-[18px] font-bold text-center">
+        <img src={icon} alt={title} className="w-14 h-14 object-contain" />
+        <h3 className="text-white-100 text-[16px] font-bold text-center">
           {title}
         </h3>
       </div>
@@ -54,8 +54,8 @@ const HobbiesCard = ({ index, title, icon }) => {
   return (
     <motion.div
       variants={isMobile ? {} : fadeIn("left", "spring", 0.5 * index, 0.75)}
-      className={`xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-hobbies ${
-        isMobile ? "mobile-card" : "" // Ajoutez une classe spécifique pour les appareils mobiles
+      className={`w-[18%] card-gradient p-[1px] rounded-[15px] shadow-hobbies ${
+        isMobile ? "mobile-card" : ""
       }`}
     >
       <div
@@ -64,12 +64,12 @@ const HobbiesCard = ({ index, title, icon }) => {
           scale: 1,
           speed: 450,
         }}
-        className={`cardTwo rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col ${
-          isMobile ? "mobile-card-content" : "" // Ajoutez une classe spécifique pour le contenu des cartes sur les appareils mobiles
+        className={`cardOne rounded-[15px] py-3 px-8 min-h-[280px] flex justify-evenly items-center flex-col ${
+          isMobile ? "mobile-card-content" : ""
         }`}
       >
-        <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-        <h3 className="text-white-100 text-[18px] font-bold text-center">
+        <img src={icon} alt={title} className="w-14 h-14 object-contain" />
+        <h3 className="text-white-100 text-[16px] font-bold text-center">
           {title}
         </h3>
       </div>
@@ -182,7 +182,7 @@ const About = () => {
         )}
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-4">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
@@ -257,7 +257,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Hobbies</h2>
       </motion.div>
 
-      <div className="mt-10 mb-20 flex flex-wrap gap-10">
+      <div className="mt-10 mb-20 flex flex-wrap gap-4">
         {hobbies.map((service, index) => (
           <HobbiesCard key={service.title} index={index} {...service} />
         ))}

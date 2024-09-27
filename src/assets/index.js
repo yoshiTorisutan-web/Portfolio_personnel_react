@@ -12,11 +12,13 @@ import dev from './icons/programmation.png';
 import chief_project from './icons/project_management.png';
 import webdesigner from './icons/webdesigner.png';
 import art from './icons/arts.png';
+import data from './icons/data.png';
 
 import racing from './icons/voiture-de-course.png';
 import basketball from './icons/basketball.png';
 import videogames from './icons/jeux-video.png';
 import creation from './icons/arts.png';
+import photography from './icons/photography.png';
 
 import github from './icons/github.png';
 import close from './icons/close.png';
@@ -73,6 +75,8 @@ export {
   chief_project,
   webdesigner,
   art,
+  data,
+  photography,
   racing,
   videogames,
   creation,
