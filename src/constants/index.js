@@ -75,7 +75,7 @@ const services = [
     icon: art,
   },
   {
-    title: "Data analyse",
+    title: "Data",
     icon: data,
   },
 ];
