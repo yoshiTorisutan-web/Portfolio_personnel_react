@@ -75,7 +75,7 @@ const services = [
     icon: art,
   },
   {
-    title: "Data",
+    title: "Marketing & Data",
     icon: data,
   },
 ];
