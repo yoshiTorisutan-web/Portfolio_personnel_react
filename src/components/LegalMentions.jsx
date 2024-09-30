@@ -2,11 +2,20 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 import { useMediaQuery } from "@react-hook/media-query";
+import { useNavigate } from "react-router-dom";
 
 import "../index.css";
 
 const LegalMentions = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
+
+  const navigate = useNavigate();
+
+  // Fonction pour naviguer vers la page d'accueil et remonter en haut
+  const handleGoHome = () => {
+    navigate("/"); // Naviguer vers la page d'accueil
+    window.scrollTo(0, 0); // Remonter en haut de la page
+  };
 
   return (
     <div className={isMobile ? "mt-[4rem]" : "mt-[8rem] bottomElement"}>
@@ -128,6 +137,15 @@ const LegalMentions = () => {
                 tribunaux compétents de ANGERS.
               </p>
             </section>
+            <br></br><br></br>
+            <div className="flex justify-center mt-8">
+              <button
+                onClick={handleGoHome}
+                className="px-6 py-3 text-timberWolf font-medium greenButtonML rounded-md shadow transition-colors duration-300"
+              >
+                Retour à la page principale
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -1269,3 +1269,13 @@ body::-webkit-scrollbar-thumb {
     display: none; /* Cache le conteneur du bouton d'aide et la popup sur les écrans plus petits */
   }
 }
+
+/*Bouton mentions légales */
+.greenButtonML {
+  color: white;
+  background: rgba(61, 131, 97, 1);
+}
+
+.greenButtonML:hover {
+  background: rgba(61, 131, 97, 0.747);
+}
