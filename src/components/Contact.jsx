@@ -111,7 +111,7 @@ export const Contact = (index) => {
           </label>
 
           <ReCAPTCHA
-            sitekey="6Ldg51QqAAAAAJFURQrap4vkUExCBnr9fWWsJWmW"
+            sitekey={import.meta.env.VITE_SERVICE_ID}
             onChange={(val) => setCapVal(val)}
           />
 
