@@ -18,13 +18,11 @@ const Tech = () => {
         <div className="skill-icons-gird">
           {technologies.map((technology) => {
             return (
-              <>
-                <div className="skill font-beckman">
-                  <img src={technology.icon} alt="Skill logo image" />
-                  <div className="text-overlay">{technology.temps}</div>
-                  <p>{technology.name}</p>
-                </div>
-              </>
+              <div className="skill font-beckman" key={technology.name}>
+                <img src={technology.icon} alt="Skill logo image" />
+                <div className="text-overlay">{technology.temps}</div>
+                <p>{technology.name}</p>
+              </div>
             );
           })}
         </div>

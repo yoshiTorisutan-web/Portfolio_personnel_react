@@ -81,48 +81,48 @@ const SocialLinks = () => {
   return (
     <div className="social-links">
       <div className="social-link">
-        <p>
-          <b>Linkedin</b>
-        </p>
-        <a
-          href="https://www.linkedin.com/in/tristan-bossard-dw/"
-          className="iconSM-hover"
-        >
-          <FaLinkedin size={30} color="#0e76a8" />
-        </a>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <b style={{ marginRight: "8px" }}>Linkedin</b>
+          <a
+            href="https://www.linkedin.com/in/tristan-bossard-dw/"
+            className="iconSM-hover"
+          >
+            <FaLinkedin size={30} color="#0e76a8" />
+          </a>
+        </div>
       </div>
       <div className="social-link">
-        <p>
-          <b>Github</b>
-        </p>
-        <a
-          href="https://github.com/yoshiTorisutan-web/"
-          className="iconSM-hover"
-        >
-          <FaGithub size={30} color="#6c6cec" />
-        </a>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <b style={{ marginRight: "8px" }}>Github</b>
+          <a
+            href="https://github.com/yoshiTorisutan-web/"
+            className="iconSM-hover"
+          >
+            <FaGithub size={30} color="#6c6cec" />
+          </a>
+        </div>
       </div>
       <div className="social-link">
-        <p>
-          <b>Pinterest</b>
-        </p>
-        <a
-          href="https://www.pinterest.fr/yoshiTorisutan_creative/"
-          className="iconSM-hover"
-        >
-          <FaPinterest size={30} color="#E60023" />
-        </a>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <b style={{ marginRight: "8px" }}>Pinterest</b>
+          <a
+            href="https://www.pinterest.fr/yoshiTorisutan_creative/"
+            className="iconSM-hover"
+          >
+            <FaPinterest size={30} color="#E60023" />
+          </a>
+        </div>
       </div>
       <div className="social-link">
-        <p>
-          <b>Youtube</b>
-        </p>
-        <a
-          href="https://www.youtube.com/@tbd_motorsport8594/"
-          className="iconSM-hover"
-        >
-          <FaYoutube size={30} color="#E60023" />
-        </a>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <b style={{ marginRight: "8px" }}>Youtube</b>
+          <a
+            href="https://www.youtube.com/@tbd_motorsport8594/"
+            className="iconSM-hover"
+          >
+            <FaYoutube size={30} color="#E60023" />
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -138,7 +138,7 @@ const About = () => {
       </motion.div>
 
       <div className="containerAbout flex flex-col md:flex-row items-center">
-        <motion.p
+        <motion.div
           variants={isMobile ? {} : fadeIn("", "", 0.1, 1)}
           className="textAbout mt-4 text-jet text-[18px] max-w-3xl leading-[30px] md:mr-8"
         >
@@ -147,30 +147,31 @@ const About = () => {
             <em>Tristan</em>
           </b>
           , <b>développeur web</b> passionné et créatif.
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           <em>Mes centres d'intérêts ?</em> La <b>création graphique</b>,{" "}
           <b>l'informatique</b> et bien plus encore, que je vous invite à
           découvrir au fil de ce portfolio.
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           Curieux et dynamique, j'évolue chaque jour en enrichissant mes
           compétences dans le domaine du <b>web</b> et du{" "}
           <b>design graphique</b>. Chaque projet sur lequel je travaille est
-          pour moi une opportunité d'apprendre et de me dépasser.<br></br>
-          <br></br>
+          pour moi une opportunité d'apprendre et de me dépasser.
+          <br />
+          <br />
           Lorsque je suis immergé dans un projet qui me <b>passionne</b>, je me
           donne à fond sans compter mes heures pour atteindre l'excellence.{" "}
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           Mon caractère <b>discret</b> m'offre une perspective unique : il
           m'incite à observer attentivement le monde qui m'entoure, à capter les
           détails qui nourrissent ma créativité et inspirent mes futures
           réalisations.
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           <SocialLinks />
-        </motion.p>
+        </motion.div>
 
         {!isMobile && (
           <motion.img
@@ -178,7 +179,7 @@ const About = () => {
             src={astronaut}
             alt="Astronaute"
             className="imageAbout mt-4 md:mt-0"
-          ></motion.img>
+          />
         )}
       </div>
 
@@ -237,7 +238,14 @@ const About = () => {
             >
               <YouTube
                 videoId="bjsrVsWmREo"
-                opts={{ width: "450px", height: "250px" }}
+                opts={{
+                  width: "450px",
+                  height: "250px",
+                  playerVars: {
+                    // Paramètres de la vidéo
+                    autoplay: 1, // Lancer la vidéo automatiquement
+                  },
+                }}
               />
             </motion.div>
             <motion.img

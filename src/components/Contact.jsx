@@ -26,10 +26,10 @@ export const Contact = (index) => {
 
     emailjs
       .sendForm(
-        "service_0tcfms9",
-        "template_we29617",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        "tQ30iSG0cOmJqiA-V"
+        import.meta.env.VITE_USER_ID
       )
       .then(
         () => {
@@ -111,7 +111,7 @@ export const Contact = (index) => {
           </label>
 
           <ReCAPTCHA
-            sitekey="6Leh44MpAAAAACstTUXh1KielvQIhBMSRcp89s9S"
+            sitekey={import.meta.env.VITE_RECAPTCHA_SITE}
             onChange={(val) => setCapVal(val)}
           />
 
