@@ -11,6 +11,8 @@ import { rocket } from "../assets";
 import { useMediaQuery } from "@react-hook/media-query";
 import ReCAPTCHA from "react-google-recaptcha";
 
+import config from "../config";
+
 import "../index.css";
 
 export const Contact = (index) => {
@@ -26,10 +28,10 @@ export const Contact = (index) => {
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
+        config.emailJS.serviceID,
+        config.emailJS.templateID,
         form.current,
-        import.meta.env.VITE_USER_ID
+        config.emailJS.userID
       )
       .then(
         () => {
@@ -111,7 +113,7 @@ export const Contact = (index) => {
           </label>
 
           <ReCAPTCHA
-            sitekey={import.meta.env.VITE_SERVICE_ID}
+            sitekey={config.reCAPTCHA.siteKey}
             onChange={(val) => setCapVal(val)}
           />
 
