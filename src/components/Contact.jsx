@@ -11,7 +11,7 @@ import { rocket } from "../assets";
 import { useMediaQuery } from "@react-hook/media-query";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import config from "../../config";
+import config from "./config";
 
 import "../index.css";
 
