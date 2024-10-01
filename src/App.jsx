@@ -18,7 +18,6 @@ import {
 import "./index.css";
 
 const App = () => {
-  console.log(import.meta.env.VITE_SERVICE_ID)
   useEffect(() => {
     // Désactiver le clic droit sur tout le site
     const disableRightClick = (e) => {

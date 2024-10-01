@@ -3,17 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/rocket.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://www.recaptcha.net/recaptcha/api.js"
+      async
+      defer
+    ></script>
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';"
+      content="
+    default-src 'self'; 
+    script-src 'self' http://localhost:5173 https://tristanbossard.netlify.app/ https://www.gstatic.com https://www.google.com https://www.youtube.com http://www.youtube.com https://www.youtube-nocookie.com 'unsafe-inline' 'unsafe-eval'; 
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+    img-src 'self' data: https://www.gstatic.com https://www.youtube.com; 
+    font-src 'self' https://fonts.gstatic.com; 
+    frame-src https://www.youtube.com http://www.youtube.com https://www.youtube-nocookie.com https://www.recaptcha.net; 
+    media-src https://www.youtube.com; 
+    connect-src 'self' https://www.google.com https://api.emailjs.com;
+  "
     />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Portfolio web" />
     <title>Tristan Bossard - Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-CXRsKtLC.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CkJDTWWH.css">
+    <script type="module" crossorigin src="/assets/index-BvSxacUg.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D5YJr9Cj.css">
   </head>
   <body class="bg-night">
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>
