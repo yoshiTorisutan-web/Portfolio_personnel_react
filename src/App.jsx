@@ -19,6 +19,9 @@ import "./index.css";
 
 const App = () => {
   console.log(import.meta.env.VITE_SERVICE_ID)
+  console.log(import.meta.env.VITE_TEMPLATE_ID)
+  console.log(import.meta.env.VITE_USER_ID)
+  console.log(import.meta.env.VITE_RECAPTCHA_SITE)
   useEffect(() => {
     // Désactiver le clic droit sur tout le site
     const disableRightClick = (e) => {
