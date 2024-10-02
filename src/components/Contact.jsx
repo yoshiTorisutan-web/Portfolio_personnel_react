@@ -4,9 +4,8 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+import { slideIn, fadeIn } from "../utils/motion";
 import { send, sendHover } from "../assets";
-import { fadeIn } from "../utils/motion";
 import { rocket } from "../assets";
 import { useMediaQuery } from "@react-hook/media-query";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -19,39 +18,76 @@ export const Contact = (index) => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
   const [capVal, setCapVal] = useState(null);
+  const [errors, setErrors] = useState({});
+  const [submissionCount, setSubmissionCount] = useState(0);
+  const MAX_SUBMISSIONS = 3;
 
-  const sendEmail = (e) => {
+  const validateForm = () => {
+    let tempErrors = {};
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regex pour l'email
+
+    if (!form.current.name.value) {
+      tempErrors.name = "Le nom est requis.";
+    }
+
+    if (
+      !form.current.email.value ||
+      !emailRegex.test(form.current.email.value)
+    ) {
+      tempErrors.email = "Une adresse email valide est requise.";
+    }
+
+    if (!form.current.message.value) {
+      tempErrors.message = "Le message est requis.";
+    }
+
+    setErrors(tempErrors);
+    return Object.keys(tempErrors).length === 0; // Si pas d'erreurs, renvoie true
+  };
+
+  const sendEmail = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_USER_ID
-      )
-      .then(
-        () => {
-          setLoading(false);
-          // Afficher le message d'alerte personnalisé de succès
-          setMessage(
-            <div className="bg-green-500 text-white p-4 rounded">
-              Je vous remercie. Je reviendrai vers vous dès que possible.
-            </div>
-          );
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          // Afficher le message d'alerte personnalisé d'erreur
-          setMessage(
-            <div className="bg-red-500 text-white p-4 rounded">
-              Un problème sest produit. Veuillez réessayer.
-            </div>
-          );
-        }
+    if (submissionCount >= MAX_SUBMISSIONS) {
+      setMessage(
+        <div className="bg-red-500 text-white p-4 rounded">
+          Vous avez atteint le nombre maximum de soumissions. Veuillez réessayer
+          plus tard.
+        </div>
       );
+      setLoading(false);
+      return;
+    }
+
+    if (!validateForm()) {
+      setLoading(false);
+      return; // Ne pas envoyer si validation échoue
+    }
+
+    try {
+      await emailjs.sendForm(
+        "service_g6go4si",
+        "template_cs4lein",
+        form.current,
+        "Jl5HetIi5YSumILmw"
+      );
+      setMessage(
+        <div className="bg-green-500 text-white p-4 rounded">
+          Je vous remercie. Je reviendrai vers vous dès que possible.
+        </div>
+      );
+      setSubmissionCount((prev) => prev + 1); // Incrémenter le compteur de soumissions
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setMessage(
+        <div className="bg-red-500 text-white p-4 rounded">
+          Un problème s’est produit. Veuillez réessayer.
+        </div>
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -80,6 +116,7 @@ export const Contact = (index) => {
               text-timberWolf rounded-lg outline-none
               border-none font-medium"
             />
+            {errors.name && <span className="text-red-500">{errors.name}</span>}
           </label>
           <label className="flex flex-col">
             <span className="text-timberWolf font-medium mb-4">
@@ -94,6 +131,7 @@ export const Contact = (index) => {
               text-timberWolf rounded-lg outline-none
               border-none font-medium"
             />
+             {errors.email && <span className="text-red-500">{errors.email}</span>}
           </label>
           <label className="flex flex-col">
             <span className="text-timberWolf font-medium mb-4">
@@ -108,10 +146,11 @@ export const Contact = (index) => {
               text-timberWolf rounded-lg outline-none
               border-none font-medium resize-none"
             />
+            {errors.message && <span className="text-red-500">{errors.message}</span>}
           </label>
 
           <ReCAPTCHA
-            sitekey={import.meta.env.VITE_RECAPTCHA_SITE}
+            sitekey="6Ldg51QqAAAAAJFURQrap4vkUExCBnr9fWWsJWmW"
             onChange={(val) => setCapVal(val)}
           />
 
