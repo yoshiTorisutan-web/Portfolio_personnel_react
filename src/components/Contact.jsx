@@ -21,10 +21,11 @@ export const Contact = (index) => {
   const [errors, setErrors] = useState({});
   const [submissionCount, setSubmissionCount] = useState(0);
   const MAX_SUBMISSIONS = 3;
+  const [messageLength, setMessageLength] = useState(0);
 
   const validateForm = () => {
     let tempErrors = {};
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regex pour l'email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!form.current.name.value) {
       tempErrors.name = "Le nom est requis.";
@@ -42,7 +43,7 @@ export const Contact = (index) => {
     }
 
     setErrors(tempErrors);
-    return Object.keys(tempErrors).length === 0; // Si pas d'erreurs, renvoie true
+    return Object.keys(tempErrors).length === 0;
   };
 
   const sendEmail = async (e) => {
@@ -60,9 +61,18 @@ export const Contact = (index) => {
       return;
     }
 
+    if (!capVal) {
+      setErrors((prev) => ({
+        ...prev,
+        recaptcha: "Veuillez valider le reCAPTCHA.",
+      }));
+      setLoading(false);
+      return;
+    }
+
     if (!validateForm()) {
       setLoading(false);
-      return; // Ne pas envoyer si validation échoue
+      return;
     }
 
     try {
@@ -77,7 +87,10 @@ export const Contact = (index) => {
           Je vous remercie. Je reviendrai vers vous dès que possible.
         </div>
       );
-      setSubmissionCount((prev) => prev + 1); // Incrémenter le compteur de soumissions
+      setSubmissionCount((prev) => prev + 1);
+      form.current.reset(); // Réinitialise le formulaire
+      setCapVal(null); // Réinitialise le reCAPTCHA
+      setMessageLength(0); // Réinitialise la longueur du message
     } catch (error) {
       console.error("Error sending email:", error);
       setMessage(
@@ -88,6 +101,10 @@ export const Contact = (index) => {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleMessageChange = (e) => {
+    setMessageLength(e.target.value.length);
   };
 
   return (
@@ -111,12 +128,13 @@ export const Contact = (index) => {
               type="text"
               name="name"
               placeholder="Votre nom & prénom"
-              className="bg-color-input py-4 px-6
-              placeholder:text-taupe
-              text-timberWolf rounded-lg outline-none
-              border-none font-medium"
+              className="bg-color-input py-4 px-6 placeholder:text-taupe text-timberWolf rounded-lg outline-none border-2 border-taupe transition duration-300 focus:border-gray-300 focus:shadow-md"
+              aria-required="true"
+              aria-invalid={errors.name ? "true" : "false"}
             />
-            {errors.name && <span className="text-red-500">{errors.name}</span>}
+            {errors.name && (
+              <span className="text-red-500 error-message">{errors.name}</span>
+            )}
           </label>
           <label className="flex flex-col">
             <span className="text-timberWolf font-medium mb-4">
@@ -126,12 +144,13 @@ export const Contact = (index) => {
               type="email"
               name="email"
               placeholder="Votre adresse mail"
-              className="bg-color-input py-4 px-6
-              placeholder:text-taupe
-              text-timberWolf rounded-lg outline-none
-              border-none font-medium"
+              className="bg-color-input py-4 px-6 placeholder:text-taupe text-timberWolf rounded-lg outline-none border-2 border-taupe transition duration-300 focus:border-gray-300 focus:shadow-md"
+              aria-required="true"
+              aria-invalid={errors.email ? "true" : "false"}
             />
-             {errors.email && <span className="text-red-500">{errors.email}</span>}
+            {errors.email && (
+              <span className="text-red-500 error-message">{errors.email}</span>
+            )}
           </label>
           <label className="flex flex-col">
             <span className="text-timberWolf font-medium mb-4">
@@ -141,29 +160,44 @@ export const Contact = (index) => {
               rows="7"
               name="message"
               placeholder="Votre message"
-              className="bg-color-input py-4 px-6
-              placeholder:text-taupe
-              text-timberWolf rounded-lg outline-none
-              border-none font-medium resize-none"
+              className="bg-color-input py-4 px-6 placeholder:text-taupe text-timberWolf rounded-lg outline-none border-2 border-taupe transition duration-300 focus:border-gray-300 focus:shadow-md resize-none"
+              onChange={handleMessageChange}
+              maxLength={500}
+              aria-required="true"
+              aria-invalid={errors.message ? "true" : "false"}
             />
-            {errors.message && <span className="text-red-500">{errors.message}</span>}
+            {errors.message && (
+              <span className="text-red-500 error-message">
+                {errors.message}
+              </span>
+            )}
+            <div className="flex justify-end">
+              <span className="text-timberWolf text-sm">{`${messageLength}/500 caractères`}</span>
+            </div>
           </label>
-
           <ReCAPTCHA
             sitekey="6Ldg51QqAAAAAJFURQrap4vkUExCBnr9fWWsJWmW"
             onChange={(val) => setCapVal(val)}
+            onMouseOver={() => {
+              document
+                .querySelector(".contact-btn")
+                .setAttribute("src", sendHover);
+            }}
+            onMouseOut={() => {
+              document.querySelector(".contact-btn").setAttribute("src", send);
+            }}
+            className="my-4"
           />
+          {errors.recaptcha && (
+            <span className="text-red-500 error-message">
+              {errors.recaptcha}
+            </span>
+          )}
 
           <button
             type="submit"
-            className="live-demo flex justify-center sm:gap-4 
-    gap-3 sm:text-[20px] text-[16px] text-white
-    font-bold font-beckman items-center py-5
-    whitespace-nowrap sm:w-[250px] sm:h-[50px] 
-    w-[150px] h-[50px] rounded-[10px] bg-color-input
-    hover:bg-black hover:text-white
-    transition duration-[0.2s] ease-in-out cursor-pointer"
-            disabled={!capVal}
+            className="live-demo flex justify-center sm:gap-4 gap-3 sm:text-[20px] text-[16px] text-white font-bold font-beckman items-center py-5 whitespace-nowrap sm:w-[250px] sm:h-[50px] w-[150px] h-[50px] rounded-[10px] bg-color-input hover:bg-black hover:text-white transition duration-[0.2s] ease-in-out cursor-pointer"
+            disabled={!capVal || loading}
             onMouseOver={() => {
               document
                 .querySelector(".contact-btn")
@@ -177,11 +211,9 @@ export const Contact = (index) => {
             <img
               src={send}
               alt="send"
-              className="contact-btn sm:w-[26px] sm:h-[26px] 
-      w-[23px] h-[23px] object-contain"
+              className="contact-btn sm:w-[26px] sm:h-[26px] w-[23px] h-[23px] object-contain"
             />
           </button>
-
           {message && <div className="mt-4">{message}</div>}
         </form>
       </motion.div>
