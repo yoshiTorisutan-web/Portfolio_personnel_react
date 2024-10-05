@@ -64,7 +64,7 @@ const ProjectCard = ({
             <div className="absolute inset-0 flex justify-end m-3">
               <div
                 onClick={() => window.open(repo, "_blank")}
-                className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full 
+                className="bg-night sm:w-9 sm:h-9 w-8 h-8 rounded-full 
                   flex justify-center items-center cursor-pointer
                   sm:opacity-[0.9] opacity-[0.8]"
               >
@@ -75,16 +75,16 @@ const ProjectCard = ({
                 />
               </div>
             </div>
-            <br></br><br></br>
+            <br></br>
             <h2
-              className="font-bold sm:text-[20px] text-[20px] 
+              className="font-bold sm:text-[16px] text-[16px] 
               text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]"
             >
               {name}
             </h2>
             <br></br>
             <p
-              className="text-silver sm:text-[14px] text-[12px] 
+              className="text-silver sm:text-[12px] text-[10px] 
               max-w-3xl sm:leading-[24px] leading-[18px]
               font-poppins tracking-[1px]"
             >
