@@ -19,7 +19,7 @@ const ConfidentialPolitic = () => {
   return (
     <div className={isMobile ? "mt-[4rem]" : "mt-[8rem] bottomElement"}>
       <div className="w-full flex justify-center">
-        <div className="container mx-auto p-6 bg-white shadow-md rounded-lg text-jet">
+        <div className="container p-4 bg-white shadow-md rounded-lg text-jet max-w-[90%] mx-2">
           <motion.div variants={isMobile ? {} : textVariant()}>
             <h2 className={styles.sectionHeadText}>
               Politique de Confidentialité
@@ -191,7 +191,8 @@ const ConfidentialPolitic = () => {
                 contacter.
               </p>
             </section>
-            <br></br><br></br>
+            <br></br>
+            <br></br>
             <div className="flex justify-center mt-8">
               <button
                 onClick={handleGoHome}
