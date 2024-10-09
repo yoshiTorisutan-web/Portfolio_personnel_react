@@ -29,13 +29,14 @@ const ProjectCard = ({
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className={`relative ${
         active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
-      } flex items-center justify-center min-w-[170px] 
-      h-[420px] cursor-pointer card-shadow`}
+      } flex items-center justify-center min-w-[170px] h-[420px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}
+      whileHover={{ scale: 0.9 }} // Ajoute l'effet de survol ici
+      transition={{ duration: 0.3 }} // Transition pour rendre l'effet plus fluide
     >
       <div
-        className="absolute top-0 left-0 z-10 bg-green-950 
-      h-full w-full opacity-[0.5] rounded-[24px]"
+        className="absolute top-0 left-0 z-10 bg-gradient-to-t from-green-950 via-green-900 to-transparent 
+        h-full w-full opacity-[0.7] rounded-[24px]"
       ></div>
 
       <img
@@ -56,26 +57,25 @@ const ProjectCard = ({
           </h3>
         </div>
       ) : (
-        <>
-          <div
-            className="absolute bottom-0 p-8 justify-start w-full 
-            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20"
-          >
-            <div className="absolute inset-0 flex justify-end m-3">
-              <div
-                onClick={() => window.open(repo, "_blank")}
-                className="bg-night sm:w-9 sm:h-9 w-8 h-8 rounded-full 
-                  flex justify-center items-center cursor-pointer
-                  sm:opacity-[0.9] opacity-[0.8]"
-              >
-                <img
-                  src={plus}
-                  alt="Voir plus"
-                  className="w-3/5 h-3/5 object-contain plus-hover"
-                />
-              </div>
+        <div
+          className="absolute bottom-0 p-8 justify-start w-full 
+          flex-col bg-[rgba(122,122,122,0.7)] rounded-b-[24px] z-20"
+        >
+          <div className="absolute inset-0 flex justify-end m-3">
+            <div
+              onClick={() => window.open(repo, "_blank")}
+              className="bg-night sm:w-9 sm:h-9 w-8 h-8 rounded-full 
+              flex justify-center items-center cursor-pointer
+              sm:opacity-[0.9] opacity-[0.8]"
+            >
+              <img
+                src={plus}
+                alt="Voir plus"
+                className="w-3/5 h-3/5 object-contain plus-hover"
+              />
             </div>
-            <br></br>
+          </div>
+          <br></br>
             <h2
               className="font-bold sm:text-[16px] text-[16px] 
               text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]"
@@ -91,7 +91,6 @@ const ProjectCard = ({
               {description}
             </p>
           </div>
-        </>
       )}
     </motion.div>
   );
@@ -103,7 +102,7 @@ const Projects = () => {
   return (
     <div className="-mt-[2rem]">
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Exemple de projets</p>
+        <p className={`${styles.sectionSubText}`}>Exemple de projets</p>
         <h2 className={`${styles.sectionHeadTextLight}`}>Projets.</h2>
       </motion.div>
 
@@ -113,11 +112,13 @@ const Projects = () => {
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
         >
           Ces projets démontrent mon expertise avec des exemples pratiques de
-          mon travail, y compris de brèves descriptions et des liens vers des démonstrations en direct.
+          mon travail, y compris de brèves descriptions et des liens vers des
+          démonstrations en direct.
           <br></br>
           <br></br>
-          Ils démontrent ma capacité à relever des défis complexes, à m'adapter à diverses technologies et
-          à travailler efficacement sur de nouveaux projets.
+          Ils démontrent ma capacité à relever des défis complexes, à m'adapter
+          à diverses technologies et à travailler efficacement sur de nouveaux
+          projets.
         </motion.p>
       </div>
 

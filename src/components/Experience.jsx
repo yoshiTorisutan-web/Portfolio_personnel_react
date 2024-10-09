@@ -17,10 +17,11 @@ import "../index.css";
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{
-      background: "#eaeaec",
+      background: "#f8f8f8",
       color: "#292929",
       boxShadow:
         "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+      transition: "all 0.3s ease-in-out",
     }}
     contentArrowStyle={{
       borderRight: "7px solid  #232631",
@@ -40,11 +41,12 @@ const ExperienceCard = ({ experience }) => (
           target="_blank"
           rel="noopener noreferrer"
           className="block text-center"
+          aria-label={`Visiter le dépôt de ${experience.company_name}`}
         >
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className="inline-block w-[50%] h-[50%] object-contain"
+            className="inline-block w-[50%] h-[50%] object-contain transition-transform transform hover:scale-110"
           />
         </a>
       </div>
@@ -55,10 +57,13 @@ const ExperienceCard = ({ experience }) => (
         {experience.title}
       </h3>
       <p
-        className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
+        className="text-taupe text-[20px] font-semibold font-overcameBold tracking-[1px]"
         style={{ margin: 0 }}
       >
         {experience.company_name}
+      </p>
+      <p className="text-taupe text-[18px] font-normal mt-1">
+        {experience.description}
       </p>
     </div>
   </VerticalTimelineElement>
@@ -83,13 +88,14 @@ const Experience = () => {
           ))}
           <VerticalTimelineElement
             contentStyle={{
-              background: "#eaeaec",
+              background: "#f8f8f8",
               color: "#292929",
               boxShadow:
                 "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              transition: "all 0.3s ease-in-out",
             }}
             contentArrowStyle={{
               borderRight: "7px solid  #232631",
@@ -107,7 +113,7 @@ const Experience = () => {
           >
             <div>
               <a href={cv} download>
-                <div className="live-demo flex justify-between items-center download-link">
+                <div className="live-demo flex justify-between items-center download-link hover:text-blue-500 transition duration-300">
                   <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
                     Télécharger mon CV
                   </h3>
