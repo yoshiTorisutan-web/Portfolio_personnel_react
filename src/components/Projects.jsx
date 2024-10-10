@@ -34,10 +34,19 @@ const ProjectCard = ({
       whileHover={{ scale: 0.9 }} // Ajoute l'effet de survol ici
       transition={{ duration: 0.3 }} // Transition pour rendre l'effet plus fluide
     >
-      <div
-        className="absolute top-0 left-0 z-10 bg-gradient-to-t from-green-950 via-green-900 to-transparent 
-        h-full w-full opacity-[0.7] rounded-[24px]"
-      ></div>
+      <div>
+        {/* Version mobile */}
+        <div
+          className="absolute top-0 left-0 z-10 bg-green-950 
+    h-full w-full opacity-[0.5] rounded-[24px] sm:hidden"
+        ></div>
+
+        {/* Version ordinateur */}
+        <div
+          className="absolute top-0 left-0 z-10 bg-gradient-to-t from-green-950 via-green-900 to-transparent 
+    h-full w-full opacity-[0.7] rounded-[24px] hidden sm:block"
+        ></div>
+      </div>
 
       <img
         src={image}
@@ -76,21 +85,21 @@ const ProjectCard = ({
             </div>
           </div>
           <br></br>
-            <h2
-              className="font-bold sm:text-[16px] text-[16px] 
+          <h2
+            className="font-bold sm:text-[16px] text-[16px] 
               text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]"
-            >
-              {name}
-            </h2>
-            <br></br>
-            <p
-              className="text-silver sm:text-[12px] text-[10px] 
+          >
+            {name}
+          </h2>
+          <br></br>
+          <p
+            className="text-silver sm:text-[12px] text-[10px] 
               max-w-3xl sm:leading-[24px] leading-[18px]
               font-poppins tracking-[1px]"
-            >
-              {description}
-            </p>
-          </div>
+          >
+            {description}
+          </p>
+        </div>
       )}
     </motion.div>
   );
