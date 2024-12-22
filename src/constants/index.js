@@ -214,14 +214,14 @@ const experiences = [
 const projects = [
   {
     id: "project-1",
-    name: "Site Web",
+    name: "Projets web",
     description: "Explorez mes créations web modernes et fonctionnelles.",
     image: web,
-    repo: "https://github.com/yoshiTorisutan-web/F1_Express",
+    repo: "https://tristanbossard-projetsweb.netlify.app/",
   },
   {
     id: "project-2",
-    name: "Application Mobile",
+    name: "Projets mobile",
     description: "Découvrez mes applications mobiles interactives.",
     image: mobile,
     repo: "https://github.com/yoshiTorisutan-web/MyDigitalProject_Marc",
