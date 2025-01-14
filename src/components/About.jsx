@@ -155,8 +155,8 @@ const About = () => {
           <br />
           <br />
           Curieux et dynamique, j'évolue chaque jour en enrichissant mes
-          compétences dans le domaine du <b>web</b> et du{" "}
-          <b>design graphique</b>. Chaque projet sur lequel je travaille est
+          compétences dans le domaine du <b>web</b> et de{" "}
+          <b>la création numérique</b>. Chaque projet sur lequel je travaille est
           pour moi une opportunité d'apprendre et de me dépasser.
           <br />
           <br />
@@ -208,16 +208,19 @@ const About = () => {
           GRETA d'Angers.
           <br></br>
           <br></br>
-          Par la suite, j'ai poursuivi mes études avec un Bachelor Développeur
+          Par la suite, j'ai effectué un Bachelor Développeur
           Web à MyDigitalSchool Angers, où j'ai décroché le{" "}
           <b>Titre Professionnel Concepteur Développeur d'Applications</b> (TP
           CDA).<br></br>
           <br></br>
-          Mon objectif est d'acquérir une double compétence en{" "}
-          <b>développement web</b> et en <b>webdesign</b>, afin de maîtriser
+          Actuellement, j'ai poursuivi mes études avec un Master Chief Digital Officer (Transformation Digitale) à MyDigitalSchool Angers, afin de décrocher le{" "}
+          <b>Titre de Manager de Projet Web et Digital</b> (TP
+          MPWD).<br></br>
+          <br></br>
+          Mon objectif est d'acquérir plusieurs compétences en{" "}
+          <b>développement web</b>, en <b>transformation digitale</b>, en <b>gestion de projet</b> et en <b>data</b> afin de maîtriser
           l'ensemble des aspects d'un projet web. Ainsi, je pourrai accompagner
-          les entreprises dans la création et l'amélioration de leurs sites
-          internet.
+          les entreprises dans la création et l'amélioration de leurs différents projets digitaux.
           <br></br>
           <br></br>
           <em>Et mon ambition ultime ?</em> Devenir un{" "}
