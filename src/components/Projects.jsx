@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { plus } from "../assets";
+import { plus, ProjetsDigitaux } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 
@@ -133,8 +133,8 @@ const Projects = () => {
 
       <div className="flex mt-8">
         <a
-          href="/src/assets/personal/Projets_digitaux.pdf" // Remplacez par le chemin vers votre fichier PDF
-          download="Projets_Digitaux.pdf" // Optionnel : vous pouvez spécifier un nom pour le fichier téléchargé
+          href={ProjetsDigitaux}
+          download="Projets_Digitaux.pdf"
           className="bg-gradient-to-r from-green-600 to-green-900 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300"
         >
           Voir plus de projets

@@ -29,6 +29,7 @@ import send from './icons/send.png';
 import sendHover from './icons/send.png';
 import plus from './icons/plus.png';
 
+import ProjetsDigitaux from './personal/Projets_digitaux.pdf';
 import cv from './personal/CV_Tristan.pdf';
 
 import css from './tech/css.png';
@@ -117,6 +118,7 @@ export {
   pasquier,
   espl,
   autodidacte,
+  ProjetsDigitaux,
   cv,
   rocket,
   astronaut_fun
