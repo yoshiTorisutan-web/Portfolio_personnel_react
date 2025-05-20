@@ -32,6 +32,7 @@ import {
   php,
   pasquier,
   autodidacte,
+  law,
   espl
 } from "../assets";
 
@@ -178,6 +179,13 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Clerc de notaire et assistant comptable ⚖️",
+    company_name: "Office notarial Maine et Loire",
+    icon: law,
+    iconBg: "#333333",
+    date: "Sept 2018 - Janvier 2021",
+  },
+  {
     title: "Développement web et Création numérique 🎨",
     company_name: "Autodidacte",
     icon: autodidacte,
@@ -206,7 +214,7 @@ const experiences = [
     company_name: "ESPL",
     icon: espl,
     iconBg: "#333333",
-    date: "Sept 2023 - En cours",
+    date: "Sept 2023 - Août 2025",
     repo: "https://www.espl.fr",
   },
 ];
