@@ -18,12 +18,14 @@ function Footer() {
           <Link
             className="text-white text-[10px] md:text-[16px] font-poppins footer__hyperlien"
             to="/mentions-legales"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             Mentions légales
           </Link>
           <Link
             className="text-white text-[10px] md:text-[16px] font-poppins footer__hyperlien"
             to="/confidential-politic"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             Politique de confidentialité
           </Link>
