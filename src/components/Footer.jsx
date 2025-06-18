@@ -18,14 +18,12 @@ function Footer() {
           <Link
             className="text-white text-[10px] md:text-[16px] font-poppins footer__hyperlien"
             to="/mentions-legales"
-            target="_blank"
           >
             Mentions légales
           </Link>
           <Link
             className="text-white text-[10px] md:text-[16px] font-poppins footer__hyperlien"
             to="/confidential-politic"
-            target="_blank"
           >
             Politique de confidentialité
           </Link>
