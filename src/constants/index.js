@@ -19,6 +19,7 @@ import {
   figma,
   web,
   music_cover,
+  anime_music_cover,
   maquettage,
   mobile,
   graphisme,
@@ -267,7 +268,7 @@ const projects = [
     name: "Couverture Musique",
     description: "Visionnez la cover musicale de Oldvine - King Of The Road.",
     image: music_cover,
-    repo: music_cover
+    repo: anime_music_cover
   },
 ];
 
