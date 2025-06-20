@@ -264,10 +264,10 @@ const projects = [
   },
   {
     id: "project-7",
-    name: "Music Cover",
-    description: "Visionnez la cover musicale de Oldvine.",
+    name: "Couverture Musique",
+    description: "Visionnez la cover musicale de Oldvine - King Of The Road.",
     image: music_cover,
-    repo: "https://www.youtube.com/watch?v=Uqb1bpoD4mI&ab_channel=Oldvine-Topic",
+    repo: music_cover
   },
 ];
 
