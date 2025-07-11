@@ -146,7 +146,7 @@ const About = () => {
           <b>
             <em>Tristan</em>
           </b>
-          , <b>développeur web</b> passionné et créatif.
+          , <b>web developer & webmaster</b> passionné et créatif.
           <br />
           <br />
           <em>Mes centres d'intérêts ?</em> La <b>création graphique</b>,{" "}
@@ -225,7 +225,7 @@ const About = () => {
           <br></br>
           <em>Et mon ambition ultime ?</em> Devenir un{" "}
           <b>chef de projet digital</b> aguerri, en perfectionnant
-          continuellement mes compétences en développement web et en webdesign.
+          continuellement mes compétences dans le digital.
           <br></br>
           <br></br>
           Je vous invite à découvrir mes réalisations. Bien sûr, tout n'est pas
