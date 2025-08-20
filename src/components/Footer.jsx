@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../index.css";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer flex flex-col md:flex-row justify-between items-center p-4 md:p-8">
       {/* Logo et Liens */}
@@ -35,7 +36,7 @@ function Footer() {
       {/* Copyright */}
       <div className="text-center md:text-right mt-4 md:mt-0">
         <p className="text-white text-[10px] md:text-[16px] font-poppins">
-          Copyright © 2024 - Créé et développé par{" "}
+          Copyright © {currentYear} - Créé et développé par s
           <b>
             <a
               className="footer__hyperlien"
