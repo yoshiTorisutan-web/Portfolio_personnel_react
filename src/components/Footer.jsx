@@ -36,7 +36,7 @@ function Footer() {
       {/* Copyright */}
       <div className="text-center md:text-right mt-4 md:mt-0">
         <p className="text-white text-[10px] md:text-[16px] font-poppins">
-          Copyright © {currentYear} - Créé et développé par s
+          Copyright © {currentYear} - Créé et développé par {""}
           <b>
             <a
               className="footer__hyperlien"
