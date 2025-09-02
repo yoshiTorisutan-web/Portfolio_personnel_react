@@ -156,8 +156,8 @@ const About = () => {
           <br />
           Curieux et dynamique, j'évolue chaque jour en enrichissant mes
           compétences dans le domaine du <b>web</b> et de{" "}
-          <b>la création numérique</b>. Chaque projet sur lequel je travaille est
-          pour moi une opportunité d'apprendre et de me dépasser.
+          <b>la création numérique</b>. Chaque projet sur lequel je travaille
+          est pour moi une opportunité d'apprendre et de me dépasser.
           <br />
           <br />
           Lorsque je suis immergé dans un projet qui me <b>passionne</b>, je me
@@ -206,31 +206,38 @@ const About = () => {
           compétences en alternance afin d'obtenir mon{" "}
           <b>Titre Professionnel Développeur Web et Web Mobile</b> (TP DWWM) au
           GRETA d'Angers.
-          <br></br>
-          <br></br>
-          Par la suite, j'ai effectué un Bachelor Développeur
-          Web à MyDigitalSchool Angers, où j'ai décroché le{" "}
+          <br />
+          <br />
+          J’ai ensuite poursuivi avec un Bachelor Développeur Web à
+          MyDigitalSchool Angers, où j'ai décroché le{" "}
           <b>Titre Professionnel Concepteur Développeur d'Applications</b> (TP
-          CDA).<br></br>
-          <br></br>
-          Actuellement, j'ai poursuivi mes études avec un Master Chief Digital Officer (Transformation Digitale) à MyDigitalSchool Angers, afin de décrocher le{" "}
-          <b>Titre de Manager de Projet Web et Digital</b> (TP
-          MPWD).<br></br>
-          <br></br>
-          Mon objectif est d'acquérir plusieurs compétences en{" "}
-          <b>développement web</b>, en <b>transformation digitale</b>, en <b>gestion de projet</b> et en <b>data</b> afin de maîtriser
-          l'ensemble des aspects d'un projet web. Ainsi, je pourrai accompagner
-          les entreprises dans la création et l'amélioration de leurs différents projets digitaux.
-          <br></br>
-          <br></br>
+          CDA).
+          <br />
+          <br />
+          Plus récemment, j’ai validé mon{" "}
+          <b>Master Chief Digital Officer</b> <em>(en spécialité la transformation digitale)</em> à
+          MyDigitalSchool Angers, avec l’obtention du{" "}
+          <b>Titre de Manager de Projet Web et Digital</b> (TP MPWD).
+          <br />
+          <br />
+          Mon parcours m’a permis d’acquérir des compétences solides en{" "}
+          <b>développement web</b>, en <b>transformation digitale</b>, en{" "}
+          <b>gestion de projet</b> et en <b>data</b>, afin de maîtriser
+          l'ensemble des aspects d'un projet digital. Grâce à cela, je peux
+          accompagner les entreprises dans la création, l’optimisation et la
+          gestion de leurs projets numériques.
+          <br />
+          <br />
           <em>Et mon ambition ultime ?</em> Devenir un{" "}
           <b>chef de projet digital</b> aguerri, en perfectionnant
-          continuellement mes compétences dans le digital.
-          <br></br>
-          <br></br>
+          continuellement mes compétences et en restant à l'affût des évolutions
+          du digital.
+          <br />
+          <br />
           Je vous invite à découvrir mes réalisations. Bien sûr, tout n'est pas
           ici, alors si vous souhaitez discuter, en apprendre plus sur moi, ou
-          envisager une collaboration, <b>contactez-moi</b> !<br></br>
+          envisager une collaboration, <b>contactez-moi</b> !
+          <br />
         </motion.p>
 
         {!isMobile && (
