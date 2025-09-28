@@ -54,7 +54,8 @@ import symfony from './tech/symfony.png'
 import pasquier from './company/pasquier.png';
 import espl from './company/ESPL.png';
 import autodidacte from './company/autodidacte.png';
-import law from './company/law.png'
+import law from './company/law.png';
+import avenir from './company/avenir.png'
 
 import mobile from './projects/application_mobile.png';
 import graphisme from './projects/graphisme.png';
@@ -120,6 +121,7 @@ export {
   maquettage,
   pasquier,
   espl,
+  avenir,
   autodidacte,
   law,
   ProjetsDigitaux,

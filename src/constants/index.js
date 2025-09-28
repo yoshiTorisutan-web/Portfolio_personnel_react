@@ -34,7 +34,8 @@ import {
   pasquier,
   autodidacte,
   law,
-  espl
+  espl,
+  avenir
 } from "../assets";
 
 export const navLinks = [
@@ -217,6 +218,14 @@ const experiences = [
     iconBg: "#333333",
     date: "Sept 2023 - Août 2025",
     repo: "https://www.espl.fr",
+  },
+  {
+    title: "Développeur Web / Webmaster - Wordpress & ODOO 🌐",
+    company_name: "Avenir Communication",
+    icon: avenir,
+    iconBg: "#333333",
+    date: "Sept 2025 - Août 2026",
+    repo: "https://avenir-communication.com/",
   },
 ];
 
