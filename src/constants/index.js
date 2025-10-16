@@ -270,7 +270,7 @@ const projects = [
     name: "Maquettage",
     description: "Explorez mes maquettes innovantes.",
     image: maquettage,
-    repo: "https://www.figma.com/@tbd_design",
+    repo: "https://www.figma.com/fr-fr/communaute/file/1405622134550558778/marc-pret-payez-partez",
   },
   {
     id: "project-7",
