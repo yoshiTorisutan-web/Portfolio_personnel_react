@@ -170,9 +170,9 @@ const About = () => {
           expérience enrichissante et porteuse de sens.
           <br />
           <br />
-          🎨 Mon univers mêle <b>design</b>, <b>data</b> et <b>digital</b>, au
+          Mon univers mêle <b>design</b>, <b>data</b> et <b>digital</b>, au
           service d’expériences web à la fois esthétiques, performantes et
-          humaines.
+          humaines. 🎨
           <br />
           <br />
           <SocialLinks />
