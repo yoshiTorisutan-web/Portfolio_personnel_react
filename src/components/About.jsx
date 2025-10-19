@@ -142,32 +142,38 @@ const About = () => {
           variants={isMobile ? {} : fadeIn("", "", 0.1, 1)}
           className="textAbout mt-4 text-jet text-[18px] max-w-3xl leading-[30px] md:mr-8"
         >
-          Moi c'est{" "}
+          Moi c’est{" "}
           <b>
-            <em>Tristan</em>
+            <em>Tristan Bossard</em>
           </b>
-          , <b>web developer & webmaster</b> passionné et créatif.
+          , <b>web developer</b>, <b>webmaster</b> et{" "}
+          <b>chef de projet digital</b> passionné par la création et
+          l’innovation numérique. 🚀
           <br />
           <br />
-          <em>Mes centres d'intérêts ?</em> La <b>création graphique</b>,{" "}
-          <b>l'informatique</b> et bien plus encore, que je vous invite à
-          découvrir au fil de ce portfolio.
+          <b>Solaire</b> et toujours prêt à partager ma bonne humeur, j’aime
+          collaborer et créer des dynamiques positives au sein des projets que
+          je mène. 🌞
           <br />
           <br />
-          Curieux et dynamique, j'évolue chaque jour en enrichissant mes
-          compétences dans le domaine du <b>web</b> et de{" "}
-          <b>la création numérique</b>. Chaque projet sur lequel je travaille
-          est pour moi une opportunité d'apprendre et de me dépasser.
+          Curieux et créatif, je m’épanouis dans des domaines variés tels que le{" "}
+          <b>développement web</b>, la <b>gestion de projet</b>, le{" "}
+          <b>webdesign</b> et la <b>transformation digitale</b>. Chaque projet
+          est pour moi une opportunité d’apprendre, d’expérimenter et de me
+          dépasser.
           <br />
           <br />
-          Lorsque je suis immergé dans un projet qui me <b>passionne</b>, je me
-          donne à fond sans compter mes heures pour atteindre l'excellence.{" "}
+          <b>Autodidacte</b> et <b>polyvalent</b>, je combine compétences
+          techniques et sens du relationnel pour accompagner les utilisateurs
+          avec <b>pédagogie</b> et <b>bienveillance</b>. J’attache une grande
+          importance à la <b>collaboration</b>, à l’<b>écoute</b> et à la{" "}
+          <b>qualité du rendu</b>, afin de transformer chaque mission en une
+          expérience enrichissante et porteuse de sens.
           <br />
           <br />
-          Mon caractère <b>discret</b> m'offre une perspective unique : il
-          m'incite à observer attentivement le monde qui m'entoure, à capter les
-          détails qui nourrissent ma créativité et inspirent mes futures
-          réalisations.
+          Mon univers mêle <b>design</b>, <b>data</b> et <b>digital</b>, au
+          service d’expériences web à la fois esthétiques, performantes et
+          humaines. 🎨
           <br />
           <br />
           <SocialLinks />
@@ -214,9 +220,11 @@ const About = () => {
           CDA).
           <br />
           <br />
-          Plus récemment, j’ai validé mon{" "}
-          <b>Master Chief Digital Officer</b> <em>(en spécialité la transformation digitale)</em> à
-          MyDigitalSchool Angers, avec l’obtention du{" "}
+          Plus récemment, j’ai validé mon <b>
+            Master Chief Digital Officer
+          </b>{" "}
+          <em>(en spécialité la transformation digitale)</em> à MyDigitalSchool
+          Angers, avec l’obtention du{" "}
           <b>Titre de Manager de Projet Web et Digital</b> (TP MPWD).
           <br />
           <br />
