@@ -146,9 +146,8 @@ const About = () => {
           <b>
             <em>Tristan Bossard</em>
           </b>
-          , <b>web developer</b>, <b>webmaster</b> et{" "}
-          <b>chef de projet digital</b> passionné par la création et
-          l’innovation numérique. 🚀
+          , <b>web developer</b> et <b>webmaster</b> passionné par la création
+          et l’innovation numérique. 🚀
           <br />
           <br />
           <b>Solaire</b> et toujours prêt à partager ma bonne humeur, j’aime
@@ -171,9 +170,9 @@ const About = () => {
           expérience enrichissante et porteuse de sens.
           <br />
           <br />
-          Mon univers mêle <b>design</b>, <b>data</b> et <b>digital</b>, au
+          🎨 Mon univers mêle <b>design</b>, <b>data</b> et <b>digital</b>, au
           service d’expériences web à la fois esthétiques, performantes et
-          humaines. 🎨
+          humaines.
           <br />
           <br />
           <SocialLinks />
