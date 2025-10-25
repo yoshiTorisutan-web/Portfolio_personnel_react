@@ -9,7 +9,7 @@ function Footer() {
 
   return (
     <motion.footer
-      className="bg-white text-black py-10 px-6 md:px-12 border-t border-gray-200"
+      className="bg-flashWhite text-black py-10 px-6 md:px-12 border-t border-gray-200"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
