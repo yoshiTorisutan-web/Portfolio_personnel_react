@@ -74,7 +74,7 @@ const App = () => {
                 <div className="relative z-0">
                   <Contact />
                 </div>
-                <div className="relative z-0 bottomFooter">
+                <div className="relative z-0 mt-10">
                   <Footer />
                 </div>
               </>

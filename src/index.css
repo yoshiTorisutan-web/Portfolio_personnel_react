@@ -1146,11 +1146,6 @@ body::-webkit-scrollbar-thumb {
   margin-right: 10px;
 }
 
-/*Bottom Footer */
-.bottomFooter {
-  padding-bottom: 60px;
-}
-
 /*Button plus hover */
 .plus-hover {
   transition: filter 0.3s ease; /* Animation pour un effet en douceur */

@@ -212,7 +212,7 @@ const experiences = [
     repo: "https://www.espl.fr/",
   },
   {
-    title: "Assistant chef de projet numérique - Outils digitaux & CRM 🌐",
+    title: "Assistant chef de projet numérique - Outils digitaux & CRM Bitrix24 🌐",
     company_name: "ESPL",
     icon: espl,
     iconBg: "#333333",
@@ -220,7 +220,7 @@ const experiences = [
     repo: "https://www.espl.fr",
   },
   {
-    title: "Développeur Web / Webmaster - Wordpress & ODOO 🌐",
+    title: "Développeur Web / Webmaster - Wordpress & ERP ODOO 🌐",
     company_name: "Avenir Communication",
     icon: avenir,
     iconBg: "#333333",
