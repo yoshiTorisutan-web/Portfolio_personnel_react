@@ -365,7 +365,7 @@ body::-webkit-scrollbar-thumb {
   margin-left: 50px;
 }
 
-.footer__hyperlien:hover{
+.footer__hyperlien:hover {
   color: #70846c;
   transition: 0.3s;
 }
@@ -1273,4 +1273,19 @@ body::-webkit-scrollbar-thumb {
 
 .greenButtonML:hover {
   background: rgba(61, 131, 97, 0.747);
+}
+
+/* Cacher le bouton sur les écrans de moins de 768px */
+@media (max-width: 768px) {
+  .scroll-to-top-button {
+    display: none !important;
+  }
+}
+
+/* Cacher les parties du footer sur les écrans de moins de 768px */
+@media (max-width: 768px) {
+  .footer-infos,
+  .footer-reseaux {
+    display: none !important;
+  }
 }

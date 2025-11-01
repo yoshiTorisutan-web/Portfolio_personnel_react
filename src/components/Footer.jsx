@@ -43,7 +43,7 @@ function Footer() {
 
         {/* Section navigation */}
         <motion.div
-          className="flex-1 flex flex-col items-center md:items-start"
+          className="footer-infos flex-1 flex flex-col items-center md:items-start"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
@@ -81,7 +81,7 @@ function Footer() {
 
         {/* Section réseaux sociaux */}
         <motion.div
-          className="flex-1 flex flex-col items-center md:items-start"
+          className="footer-reseaux flex-1 flex flex-col items-center md:items-start"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
